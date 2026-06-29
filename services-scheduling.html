@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services &amp; Scheduling — Learn With Lane</title>
+  <meta name="description" content="Reading Remediation and ESL instruction with transparent rates. See how it works, review pricing, and book a class directly through the calendar." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="nav__brand" href="index.html">Learn With Lane<span class="dot">.</span></a>
+        <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__links" id="primary-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services-scheduling.html">Services &amp; Scheduling</a></li>
+          <li><a href="learning-games.html">Games &amp; Support</a></li>
+          <li class="nav__cta"><a class="btn btn--primary" href="#book">Book a Class</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero--accent">
+      <div class="container hero">
+        <div class="hero__copy">
+          <span class="eyebrow">Services &amp; Scheduling</span>
+          <h1>Clear rates. Real instruction. Booked in a few clicks.</h1>
+          <p>Pick the path that fits, review the rate, and grab a time on the calendar below. Every session is direct, structured, and focused on results.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#book">Go to Booking Calendar</a>
+            <a class="btn btn--ghost" href="#rates">View Rates</a>
+          </div>
+        </div>
+        <div class="hero__media">
+          <img src="images/hero-books.png" alt="A stack of books representing structured reading instruction" width="1280" height="719" />
+        </div>
+      </div>
+    </section>
+
+    <!-- 3-step process -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">How It Works</span>
+          <h2>Three steps to your first session.</h2>
+        </div>
+        <div class="grid grid--3">
+          <article class="card step">
+            <div class="step__num">1</div>
+            <h3>Book an assessment</h3>
+            <p>Choose a time on the calendar below. The first session is about understanding exactly where the student is starting.</p>
+          </article>
+          <article class="card step">
+            <div class="step__num">2</div>
+            <h3>Get a tailored plan</h3>
+            <p>You'll receive a clear, structured plan built around the student's real needs — phonics, decoding, conversation, or all of it.</p>
+          </article>
+          <article class="card step">
+            <div class="step__num">3</div>
+            <h3>Start making progress</h3>
+            <p>Regular one-on-one sessions, billed simply through Stripe. Measurable progress, no platform fees in the middle.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rates -->
+    <section class="section section--tint" id="rates">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">Pricing</span>
+          <h2>Honest, simple rates.</h2>
+          <p>No packages to decode, no hidden fees. Pay per session through Stripe.</p>
+        </div>
+        <div class="grid grid--2">
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">📖</div>
+            <h3>Reading Remediation</h3>
+            <p>Systematic support for foundational literacy, phonics, and decoding. Best for students who need to rebuild reading from the ground up. Offered during the traditional school year.</p>
+            <span class="price">$15 / session</span>
+          </article>
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">💬</div>
+            <h3>ESL Instruction</h3>
+            <p>Structured, communicative English for learners of all ages. Practical, year-round language development for school, work, and everyday conversation.</p>
+            <span class="price">$10 / session</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking calendar -->
+    <section class="section" id="book">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">Book Now</span>
+          <h2>Find a time that works.</h2>
+          <p>Pick a slot below to schedule your session. You'll get a confirmation once it's booked.</p>
+        </div>
+        <div class="calendar-wrap">
+          <iframe
+            src="https://calendar.google.com/calendar/appointments/schedules/embed?gv=true"
+            title="Book a class with Learn With Lane"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <p class="text-center mt-24">
+          Prefer a direct link?
+          <a href="https://calendar.app.google/toWHngt8VLGmqWQz6" target="_blank" rel="noopener">Open the booking page in a new tab →</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--tint">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">Questions</span>
+          <h2>Good to know.</h2>
+        </div>
+        <div class="faq">
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false">
+              How are sessions paid for?
+              <span class="chev" aria-hidden="true">▾</span>
+            </button>
+            <div class="faq__a"><p>All tuition is handled through Stripe, the sole payment processor for independent students and digital products. You'll receive a simple, secure invoice — no third-party platform fees.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false">
+              What's the difference between Reading Remediation and ESL?
+              <span class="chev" aria-hidden="true">▾</span>
+            </button>
+            <div class="faq__a"><p>Reading Remediation focuses on foundational literacy — phonics, decoding, and the mechanics of reading — and runs during the school year. ESL instruction develops practical, communicative English for learners of any age and is available year-round.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false">
+              Do you offer in-person classes?
+              <span class="chev" aria-hidden="true">▾</span>
+            </button>
+            <div class="faq__a"><p>In-person group classes in Durant, Oklahoma are in development. For now, instruction is one-on-one and virtual. <a href="learning-games.html#newsletter">Join the waitlist</a> to hear when local seats open.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">Learn With Lane</div>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services-scheduling.html">Services</a></li>
+          <li><a href="learning-games.html">Games &amp; Support</a></li>
+          <li><a href="#book">Book a Class</a></li>
+        </ul>
+      </div>
+      <p class="footer-copy">© <span id="year">2026</span> Learn With Lane · Durant, Oklahoma · Structured ESL &amp; Reading Remediation</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

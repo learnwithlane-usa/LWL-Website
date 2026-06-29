@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Games &amp; Support — Learn With Lane</title>
+  <meta name="description" content="Play Consonant Crash and other custom learning games, sign up for updates, and support the work behind Learn With Lane." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="nav__brand" href="index.html">Learn With Lane<span class="dot">.</span></a>
+        <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__links" id="primary-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services-scheduling.html">Services &amp; Scheduling</a></li>
+          <li><a href="learning-games.html">Games &amp; Support</a></li>
+          <li class="nav__cta"><a class="btn btn--primary" href="services-scheduling.html#book">Book a Class</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero--accent">
+      <div class="container hero">
+        <div class="hero__copy">
+          <span class="eyebrow">Games &amp; Support</span>
+          <h1>Learning that feels like play.</h1>
+          <p>Custom-built interactive games reinforce phonics, vocabulary, and reading comprehension between sessions. More tools are on the way — sign up to follow along.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="https://learnwithlane-usa.github.io/consonant-crash/" target="_blank" rel="noopener">Play Consonant Crash</a>
+            <a class="btn btn--ghost" href="#newsletter">Get Updates</a>
+          </div>
+        </div>
+        <div class="hero__media">
+          <img src="images/consonant-crash.jpg" alt="Consonant Crash learning game" width="1018" height="572" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Game showcase -->
+    <section class="section">
+      <div class="container split split--reverse">
+        <div class="split__copy">
+          <span class="eyebrow">Featured Game</span>
+          <h2>Consonant Crash</h2>
+          <p>A fast, friendly phonics game that drills consonant sounds through play. Built in-house as part of a growing vault of tools that reinforce what students learn in lessons.</p>
+          <ul>
+            <li>Reinforces phonics and decoding skills</li>
+            <li>Runs right in the browser — nothing to install</li>
+            <li>Part of a subscription game library in development</li>
+          </ul>
+          <div class="mt-24">
+            <a class="btn btn--secondary" href="https://learnwithlane-usa.github.io/consonant-crash/" target="_blank" rel="noopener">Launch the Game →</a>
+          </div>
+        </div>
+        <div class="split__media">
+          <img src="images/consonant-crash.jpg" alt="Screenshot of the Consonant Crash phonics game" width="1018" height="572" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="section section--tint" id="newsletter">
+      <div class="container">
+        <div class="newsletter">
+          <span class="eyebrow" style="color:#fbe9b2;">Stay in the Loop</span>
+          <h2>New games, new classes, no spam.</h2>
+          <p>Get notified when new learning games drop and when in-person classes open in Durant. That's it.</p>
+          <!--
+            TO CONNECT MAILCHIMP:
+            1. In Mailchimp: Audience → Signup forms → Embedded forms.
+            2. Copy the form's "action" URL (looks like
+               https://YOURDOMAIN.us1.list-manage.com/subscribe/post?u=XXXX&id=YYYY).
+            3. Paste it into the action="" attribute below, replacing the placeholder.
+            4. Make sure the email input's name stays "EMAIL" and the name input "FNAME"
+               (Mailchimp expects those exact field names).
+            Until then the form shows a friendly "not connected yet" note.
+          -->
+          <form data-newsletter action="PASTE_YOUR_MAILCHIMP_ACTION_URL_HERE" method="post" target="_blank" novalidate>
+            <input type="text" name="FNAME" aria-label="First name" placeholder="First name" />
+            <input type="email" name="EMAIL" aria-label="Email address" placeholder="you@example.com" required />
+            <button type="submit" class="btn btn--secondary">Sign Up</button>
+          </form>
+          <p class="form-note">We'll only email about new games and class openings.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Donation -->
+    <section class="section">
+      <div class="container">
+        <div class="donate">
+          <img src="images/buy-me-a-book.png" alt="Buy a book to support Learn With Lane" width="1280" height="719" />
+          <div>
+            <span class="eyebrow">Support the Work</span>
+            <h2>Buy a book for the cause.</h2>
+            <p>Every contribution helps fund new learning games, classroom materials, and reading resources for students who need them. If the work here has helped, you can chip in below.</p>
+            <div class="mt-24">
+              <a class="btn btn--primary" href="https://donate.stripe.com/9B67sLaOMg1Z5NM43udAk01" target="_blank" rel="noopener">Donate via Stripe</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">Learn With Lane</div>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services-scheduling.html">Services</a></li>
+          <li><a href="learning-games.html">Games &amp; Support</a></li>
+          <li><a href="services-scheduling.html#book">Book a Class</a></li>
+        </ul>
+      </div>
+      <p class="footer-copy">© <span id="year">2026</span> Learn With Lane · Durant, Oklahoma · Structured ESL &amp; Reading Remediation</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

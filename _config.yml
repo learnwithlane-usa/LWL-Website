@@ -1,0 +1,14 @@
+title: Learn With Lane
+description: Structured ESL and reading remediation instruction.
+# Exclude planning/handoff docs and source assets from the published site
+exclude:
+  - "Hero Images/"
+  - "Preproject Planning/"
+  - "BUILD_COMPLETE.md"
+  - "HANDOFF_GUIDE.md"
+  - "README.md"
+  - "Brand_Identity.md"
+  - "Tone_Guidelines.md"
+  - "Product_Lines.md"
+  - "Tech_Stack_and_Links.md"
+  - "Learn_With_Lane_Branding.md"
