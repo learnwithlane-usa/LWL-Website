@@ -16,7 +16,6 @@
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
     });
 
-    // Close menu when a link is tapped (mobile)
     links.querySelectorAll("a").forEach(function (a) {
       a.addEventListener("click", function () {
         links.classList.remove("is-open");
@@ -37,24 +36,7 @@
     });
   });
 
-  /* ---------- Newsletter form (graceful client-side handling) ----------
-     If you wire the form to a real MailChimp embed action, the browser will
-     submit normally. While the action is the placeholder "#", we intercept
-     and show a friendly message instead of navigating away. */
-  var news = document.querySelector("[data-newsletter]");
-  if (news) {
-    news.addEventListener("submit", function (e) {
-      var action = news.getAttribute("action") || "";
-      if (action === "" || action === "#" || action.indexOf("PASTE_YOUR") !== -1) {
-        e.preventDefault();
-        var note = news.parentElement.querySelector(".form-note");
-        if (note) {
-          note.textContent = "Thanks! Newsletter sign-up isn't connected yet — check back soon.";
-        }
-      }
-      // Otherwise: let the form post to MailChimp normally.
-    });
-  }
+  /* Newsletter form posts directly to Mailchimp (opens confirmation in a new tab). */
 
   /* ---------- Footer year ---------- */
   var yearEl = document.getElementById("year");

@@ -82,20 +82,12 @@
           <span class="eyebrow" style="color:#fbe9b2;">Stay in the Loop</span>
           <h2>New games, new classes, no spam.</h2>
           <p>Get notified when new learning games drop and when in-person classes open in Durant. That's it.</p>
-          <!--
-            TO CONNECT MAILCHIMP:
-            1. In Mailchimp: Audience → Signup forms → Embedded forms.
-            2. Copy the form's "action" URL (looks like
-               https://YOURDOMAIN.us1.list-manage.com/subscribe/post?u=XXXX&id=YYYY).
-            3. Paste it into the action="" attribute below, replacing the placeholder.
-            4. Make sure the email input's name stays "EMAIL" and the name input "FNAME"
-               (Mailchimp expects those exact field names).
-            Until then the form shows a friendly "not connected yet" note.
-          -->
-          <form data-newsletter action="PASTE_YOUR_MAILCHIMP_ACTION_URL_HERE" method="post" target="_blank" novalidate>
-            <input type="text" name="FNAME" aria-label="First name" placeholder="First name" />
+          <form action="https://learnwithlane.us17.list-manage.com/subscribe/post?u=2ead71c5ca41382648058c5be&amp;id=140a709089&amp;f_id=0029a3e0f0" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate>
             <input type="email" name="EMAIL" aria-label="Email address" placeholder="you@example.com" required />
-            <button type="submit" class="btn btn--secondary">Sign Up</button>
+            <button type="submit" name="subscribe" class="btn btn--secondary">Sign Up</button>
+            <div aria-hidden="true" style="position: absolute; left: -5000px;">
+              <input type="text" name="b_2ead71c5ca41382648058c5be_140a709089" tabindex="-1" value="" />
+            </div>
           </form>
           <p class="form-note">We'll only email about new games and class openings.</p>
         </div>
