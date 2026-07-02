@@ -1,5 +1,5 @@
 /* =========================================================
-   Learn With Lane — Site scripts
+   Learn with Lane — Site scripts
    Vanilla JS, no dependencies
    ========================================================= */
 (function () {
@@ -16,6 +16,7 @@
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
     });
 
+    // Close menu when a link is tapped (mobile)
     links.querySelectorAll("a").forEach(function (a) {
       a.addEventListener("click", function () {
         links.classList.remove("is-open");
@@ -25,7 +26,7 @@
     });
   }
 
-  /* ---------- FAQ accordion ---------- */
+  /* ---------- FAQ collapsible text ---------- */
   document.querySelectorAll(".faq__q").forEach(function (btn) {
     btn.addEventListener("click", function () {
       var item = btn.closest(".faq__item");
@@ -35,10 +36,4 @@
       answer.style.maxHeight = isOpen ? answer.scrollHeight + "px" : null;
     });
   });
-
-  /* Newsletter form posts directly to Mailchimp (opens confirmation in a new tab). */
-
-  /* ---------- Footer year ---------- */
-  var yearEl = document.getElementById("year");
-  if (yearEl) { yearEl.textContent = new Date().getFullYear(); }
 })();
