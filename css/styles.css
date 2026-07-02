@@ -211,11 +211,51 @@ p { color: var(--ink-soft); }
 
 /* ---------- Plain lists (steps, focus/rate/note) ---------- */
 .plain-list {
-  list-style: disc;
+  list-style: square;
   padding-left: 24px;
   color: var(--ink-soft);
+  font-size: 1.05rem;
+  font-weight: 600;
 }
 .plain-list li { margin-bottom: 10px; }
+
+/* ---------- Full-width button (schedule section) ---------- */
+.btn--block {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+/* ---------- Top-aligned split rows (Learning Games) ---------- */
+.split--top { align-items: start; }
+
+/* Section titles inside track columns (Services page) */
+.track h2 {
+  font-size: 1.5rem;
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+/* ---------- Big serif blue titles with rules (Learning Games) ---------- */
+.rule {
+  border: 0;
+  border-top: 2px solid #e8eaed;
+  margin: 0;
+}
+.games-title {
+  font-family: var(--font-serif);
+  color: var(--brand-blue);
+  font-size: 2.4rem;
+  line-height: 1.15;
+  text-align: left !important;
+  margin: 22px 0 !important;
+}
+.body-text { font-size: 0.95rem; line-height: 1.8; }
+
+/* ---------- Static FAQ (questions with visible italic answers) ---------- */
+.faq-static { text-align: left; margin-top: 24px; }
+.faq-static h3 { font-size: 1.1rem; margin-top: 22px; }
+.faq-static p { font-style: italic; }
 
 /* ---------- FAQ (collapsible text, like Google Sites) ---------- */
 .faq { max-width: 760px; margin: 0 auto; text-align: left; }
