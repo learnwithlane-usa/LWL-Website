@@ -149,6 +149,18 @@ p { color: var(--ink-soft); }
 .nav__toggle.is-open span:nth-child(2) { opacity: 0; }
 .nav__toggle.is-open span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
 
+/* ---------- Page Banner ---------- */
+.page-banner {
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+.page-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* ---------- Hero ---------- */
 .hero {
   display: grid;
