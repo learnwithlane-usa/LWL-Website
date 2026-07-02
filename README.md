@@ -1,7 +1,7 @@
 # Learn With Lane — Website
 
 Static GitHub Pages site for Learn With Lane: independent ESL and reading-remediation
-instruction based in Durant, Oklahoma.
+instruction based in Durant, Oklahoma. Pages mirror the original Google Sites layout.
 
 ## Pages
 
