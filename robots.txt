@@ -1,5 +1,4 @@
 User-agent: *
 Disallow: /downloads/
-Disallow: /thank-you.html
 
 Sitemap: https://learnwithlane.com/sitemap.xml
