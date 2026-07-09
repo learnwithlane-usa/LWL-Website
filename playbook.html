@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Reading Playbook — Grades 5–8 Reading Intervention | Learn with Lane</title>
+  <meta name="description" content="A 100-page reading intervention playbook for grades 5-8. Phonics, fluency, and comprehension in 15 minutes a day, with a coach's script on every page. Instant PDF download, $9.99." />
+  <meta property="og:title" content="The Reading Playbook — Grades 5–8 Reading Intervention" />
+  <meta property="og:description" content="100 pages of phonics, fluency, and comprehension for older readers who slipped through the cracks. 15 minutes a day. Instant PDF download." />
+  <meta property="og:image" content="https://learnwithlane.com/images/playbook-cover.jpg" />
+  <meta property="og:type" content="product" />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    /* ---- Reading Playbook sales page (scoped: .pb-*) ---- */
+    :root {
+      --pb-navy: #1e3a6e;
+      --pb-red: #dc2649;
+      --pb-brown: #8a4a28;
+      --pb-blue: #2f6fb0;
+      --pb-orange: #e8762c;
+      --pb-green: #4a9d3c;
+    }
+
+    .pb-hero { padding: 48px 0 8px; }
+    .pb-hero__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+    .pb-eyebrow {
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--pb-navy);
+      margin-bottom: 14px;
+    }
+    .pb-hero h1 { font-size: 2.6rem; letter-spacing: -0.01em; }
+    .pb-hero .lead { margin-top: 18px; font-weight: 400; font-size: 1.15rem; }
+
+    .pb-cover {
+      border: 6px solid var(--pb-navy);
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 18px 40px rgba(30, 58, 110, 0.16);
+    }
+
+    .pb-buy { margin-top: 28px; }
+    .pb-price {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+    .pb-price__amount {
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: var(--pb-navy);
+      line-height: 1;
+    }
+    .pb-price__note { font-size: 0.95rem; color: var(--ink-soft); }
+    .pb-buy .btn { font-size: 1.05rem; padding: 14px 30px; }
+    .pb-reassure {
+      margin-top: 12px;
+      font-size: 0.9rem;
+      color: var(--ink-soft);
+    }
+
+    /* Five sport-section stripes: the book's own colour system */
+    .pb-stripes {
+      display: flex;
+      height: 8px;
+      border-radius: 99px;
+      overflow: hidden;
+      margin: 0 auto 8px;
+      max-width: 320px;
+    }
+    .pb-stripes span { flex: 1; }
+    .pb-stripes span:nth-child(1) { background: var(--pb-red); }
+    .pb-stripes span:nth-child(2) { background: var(--pb-brown); }
+    .pb-stripes span:nth-child(3) { background: var(--pb-blue); }
+    .pb-stripes span:nth-child(4) { background: var(--pb-orange); }
+    .pb-stripes span:nth-child(5) { background: var(--pb-green); }
+
+    .pb-pain {
+      background: #f6f8fb;
+      border-radius: 20px;
+      padding: 36px 32px;
+    }
+    .pb-pain ul { list-style: none; margin-top: 20px; }
+    .pb-pain li {
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 14px;
+      color: var(--ink-soft);
+    }
+    .pb-pain li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 12px;
+      height: 12px;
+      border-radius: 3px;
+      background: var(--pb-red);
+    }
+
+    .pb-sections { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 28px; text-align: left; }
+    .pb-card {
+      border: 1px solid var(--line);
+      border-left: 7px solid var(--pb-navy);
+      border-radius: 12px;
+      padding: 22px 24px;
+      background: var(--paper);
+    }
+    .pb-card--1 { border-left-color: var(--pb-red); }
+    .pb-card--2 { border-left-color: var(--pb-brown); }
+    .pb-card--3 { border-left-color: var(--pb-blue); }
+    .pb-card--4 { border-left-color: var(--pb-orange); }
+    .pb-card--5 { border-left-color: var(--pb-green); }
+    .pb-card h3 { margin-bottom: 8px; }
+    .pb-card--1 h3 { color: var(--pb-red); }
+    .pb-card--2 h3 { color: var(--pb-brown); }
+    .pb-card--3 h3 { color: var(--pb-blue); }
+    .pb-card--4 h3 { color: var(--pb-orange); }
+    .pb-card--5 h3 { color: var(--pb-green); }
+    .pb-card p { font-size: 0.95rem; }
+    .pb-card__pages {
+      display: inline-block;
+      margin-top: 12px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+    }
+
+    .pb-shot {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 10px 28px rgba(32, 33, 36, 0.08);
+    }
+    .pb-caption {
+      font-size: 0.88rem;
+      color: var(--ink-soft);
+      margin-top: 12px;
+      text-align: center;
+    }
+
+    .pb-fit { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 24px; text-align: left; }
+    .pb-fit__col { border-radius: 14px; padding: 26px 28px; }
+    .pb-fit__col--yes { background: #f1f7f0; border: 1px solid #cfe4cb; }
+    .pb-fit__col--no { background: #fbf3f4; border: 1px solid #eed3d7; }
+    .pb-fit h3 { margin-bottom: 14px; }
+    .pb-fit__col--yes h3 { color: var(--pb-green); }
+    .pb-fit__col--no h3 { color: var(--pb-red); }
+    .pb-fit ul { list-style: none; }
+    .pb-fit li { margin-bottom: 10px; color: var(--ink-soft); font-size: 0.95rem; }
+
+    .pb-faq { max-width: 780px; margin: 0 auto; text-align: left; }
+    .pb-faq details {
+      border-bottom: 1px solid var(--line);
+      padding: 18px 0;
+    }
+    .pb-faq summary {
+      cursor: pointer;
+      font-weight: 700;
+      color: var(--ink);
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+    .pb-faq summary::-webkit-details-marker { display: none; }
+    .pb-faq summary::after {
+      content: "+";
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: var(--brand-blue);
+      line-height: 1;
+    }
+    .pb-faq details[open] summary::after { content: "\2212"; }
+    .pb-faq summary:focus-visible { outline: 3px solid var(--brand-blue); outline-offset: 4px; border-radius: 4px; }
+    .pb-faq p { margin-top: 12px; font-size: 0.98rem; }
+
+    .pb-final {
+      background: var(--pb-navy);
+      border-radius: 22px;
+      padding: 52px 32px;
+      text-align: center;
+      color: #fff;
+    }
+    .pb-final h2 { color: #fff; }
+    .pb-final p { color: #d6e0f0; margin-top: 14px; }
+    .pb-final .pb-price__amount { color: #fff; }
+    .pb-final .pb-price { justify-content: center; margin-top: 26px; }
+    .pb-final .pb-price__note { color: #d6e0f0; }
+    .pb-final .btn { background: var(--pb-red); }
+    .pb-final .btn:hover { background: #b81e3b; }
+    .pb-final__fine { font-size: 0.85rem; color: #aebdd6; margin-top: 18px; }
+
+    .pb-author { display: grid; grid-template-columns: 260px 1fr; gap: 36px; align-items: center; }
+    .pb-author img { border-radius: 14px; }
+
+    @media (max-width: 860px) {
+      .pb-hero__grid,
+      .pb-sections,
+      .pb-fit,
+      .pb-author { grid-template-columns: 1fr; }
+      .pb-hero { padding-top: 28px; }
+      .pb-hero h1 { font-size: 2rem; }
+      .pb-hero__media { order: -1; }
+      .pb-author img { max-width: 240px; margin: 0 auto; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="nav__brand" href="index.html">
+          <img src="images/logo.png" alt="Learn with Lane logo" />
+          Learn with Lane
+        </a>
+        <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__links" id="primary-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services-scheduling.html">Services &amp; Scheduling</a></li>
+          <li><a href="learning-games.html">Learning Games</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="section pb-hero">
+      <div class="container pb-hero__grid">
+        <div>
+          <p class="pb-eyebrow">Grades 5–8 &nbsp;•&nbsp; 100 Pages &nbsp;•&nbsp; Instant PDF</p>
+          <h1>Reading help that doesn&rsquo;t feel like third grade.</h1>
+          <p class="lead">Your student can sound out the words. They still stall on <em>transportation</em>, read like a robot, and forget the paragraph the moment they finish it. The Reading Playbook rebuilds those skills in 15 minutes a day &mdash; without handing a middle schooler a worksheet covered in cartoon animals.</p>
+
+          <div class="pb-buy">
+            <div class="pb-price">
+              <span class="pb-price__amount">$9.99</span>
+              <span class="pb-price__note">one-time &middot; downloadable PDF</span>
+            </div>
+            <a class="btn" href="https://buy.stripe.com/eVq7sLcWUeXVgsqcA0dAk08" target="_blank" rel="noopener">Get the Playbook</a>
+            <p class="pb-reassure">Secure checkout through Stripe. You&rsquo;ll land on a download page as soon as payment goes through. Digital download &mdash; all sales final.</p>
+          </div>
+        </div>
+        <div class="pb-hero__media">
+          <div class="pb-cover">
+            <img src="images/playbook-cover.jpg" alt="The Reading Playbook cover — a strategy guide for all-star readers, grades 5 to 8, 100 pages" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- The problem -->
+    <section class="section">
+      <div class="container">
+        <div class="pb-pain">
+          <h2>The gap nobody caught in third grade</h2>
+          <p class="lead mt-16">By fifth grade, reading instruction mostly stops. Students are expected to read to learn &mdash; and the ones still missing foundational skills quietly fall further behind every year. You may recognise some of this:</p>
+          <ul>
+            <li>They guess at longer words instead of breaking them apart.</li>
+            <li>They read word-by-word, flat and slow, with no expression.</li>
+            <li>They finish a page and can&rsquo;t tell you what happened in it.</li>
+            <li>They&rsquo;ve started avoiding reading altogether &mdash; and calling themselves &ldquo;bad at it.&rdquo;</li>
+            <li>Every intervention workbook you&rsquo;ve found is written for a six-year-old.</li>
+          </ul>
+          <p class="lead mt-24">None of that means your student can&rsquo;t read. It means nobody ever taught them the system underneath the words.</p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- What's inside -->
+    <section class="section section--center">
+      <div class="container">
+        <div class="pb-stripes" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+        <h2>Five sections. One hundred pages. Nothing left out.</h2>
+        <p class="lead mt-16">Each section is built around a sport, and each builds on the one before it &mdash; diagnostics first, application last.</p>
+
+        <div class="pb-sections">
+          <div class="pb-card pb-card--1">
+            <h3>Cracking the Code</h3>
+            <p>Advanced phonics for older readers: vowel teams, r-controlled vowels, consonant-le, and the six syllable types (CLOVER) that make multisyllabic words decodable instead of intimidating.</p>
+            <span class="pb-card__pages">Pages 7–28</span>
+          </div>
+          <div class="pb-card pb-card--2">
+            <h3>Word Power</h3>
+            <p>Morphology. Prefixes, suffixes, and Greek and Latin roots &mdash; <em>spect</em>, <em>struct</em>, <em>port</em>, <em>dict</em> &mdash; so one root unlocks a dozen words your student has never seen.</p>
+            <span class="pb-card__pages">Pages 29–48</span>
+          </div>
+          <div class="pb-card pb-card--3">
+            <h3>Smooth Sailing</h3>
+            <p>Fluency and prosody. Phrase-cued reading, six repeated-reading passages with cold / second / hot read tracking and words-per-minute charts, plus two Readers&rsquo; Theater scripts.</p>
+            <span class="pb-card__pages">Pages 49–68</span>
+          </div>
+          <div class="pb-card pb-card--4">
+            <h3>Thinking Deeply</h3>
+            <p>Comprehension strategies made concrete: visualising, main idea versus detail, inferencing from text clues, and summarising with SWBST and the 5 Ws.</p>
+            <span class="pb-card__pages">Pages 69–88</span>
+          </div>
+          <div class="pb-card pb-card--5">
+            <h3>Application</h3>
+            <p>Capstone passages that pull every skill together, a glossary of reading terms for you and your student, the complete answer key, and a certificate worth framing.</p>
+            <span class="pb-card__pages">Pages 89–100</span>
+          </div>
+          <div class="pb-card">
+            <h3>Built-In Supports</h3>
+            <p>A diagnostic pre-test to find the starting line, progress trackers on every page, reflection prompts, and bonus reps &mdash; Odd One Out, Find the Mistake, Real-or-Nonsense.</p>
+            <span class="pb-card__pages">Throughout</span>
+          </div>
+        </div>
+
+        <div class="mt-24">
+          <div class="pb-shot">
+            <img src="images/playbook-inside.jpg" alt="What's inside the Reading Playbook: 100 pages, five skill sections, full answer key" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- Coached, not assigned -->
+    <section class="section">
+      <div class="container split split--top">
+        <div class="split__copy">
+          <h2>You don&rsquo;t need a reading degree to teach this</h2>
+          <p class="lead">Most workbooks hand you a page and wish you luck. Every instructional page in the Playbook carries a <strong>Coach&rsquo;s Script</strong> &mdash; the actual words to say to introduce the skill &mdash; and a <strong>Know the Play</strong> box explaining the concept in plain language before your student ever picks up a pencil.</p>
+          <p class="lead">The coaching method is simple enough to hold in your head: <strong>Pause, Prompt, Praise.</strong> Wait. Give the smallest hint that works. Name what they did right. Fifteen minutes a day, four steps &mdash; warm-up, teach, practise, reflect.</p>
+          <p class="lead">The student side speaks in a different voice. They&rsquo;re the All-Star. You&rsquo;re the coach. For a twelve-year-old who has spent years being remediated, that framing does real work.</p>
+        </div>
+        <div class="split__media">
+          <div class="pb-shot">
+            <img src="images/playbook-page-guided.jpg" alt="A sample Playbook page showing the Know the Play explainer and Coach's Script" />
+          </div>
+          <p class="pb-caption">Every page: Know the Play, then Coach&rsquo;s Script, then practice.</p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- Real page -->
+    <section class="section section--center">
+      <div class="container">
+        <h2>A real page, not a mockup</h2>
+        <p class="lead mt-16">The six syllable types, taught the way a coach would teach a play.</p>
+        <div class="mt-24">
+          <div class="pb-shot">
+            <img src="images/playbook-page-sample.jpg" alt="Sample page from Section 1: The Six Syllable Types, using the CLOVER acronym" />
+          </div>
+        </div>
+        <p class="pb-caption">Print-ready on US Letter. Designed to photocopy cleanly in black and white.</p>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- Fit -->
+    <section class="section section--center">
+      <div class="container">
+        <h2>Is this the right book for your student?</h2>
+        <p class="lead mt-16">It won&rsquo;t suit everyone, and I&rsquo;d rather tell you now.</p>
+        <div class="pb-fit">
+          <div class="pb-fit__col pb-fit__col--yes">
+            <h3>A good fit if&hellip;</h3>
+            <ul>
+              <li>Your student is in grades 5&ndash;8 and reading below grade level.</li>
+              <li>They stumble on long words and read without expression.</li>
+              <li>You want structured-literacy instruction you can actually deliver at the kitchen table.</li>
+              <li>You&rsquo;re homeschooling, tutoring, or running Tier 2 / Tier 3 intervention.</li>
+              <li>You have fifteen minutes a day and a printer.</li>
+            </ul>
+          </div>
+          <div class="pb-fit__col pb-fit__col--no">
+            <h3>Probably not if&hellip;</h3>
+            <ul>
+              <li>Your child is a beginning reader still learning letter sounds &mdash; this starts past that.</li>
+              <li>You want a self-paced app. This is paper, and it needs an adult beside it.</li>
+              <li>You&rsquo;re looking for a formal diagnosis. A dyslexia evaluation is a job for a specialist.</li>
+              <li>You want something done <em>to</em> your student rather than <em>with</em> them.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- Author -->
+    <section class="section">
+      <div class="container pb-author">
+        <img src="images/david-lane.jpg" alt="David Lane, founder and instructor at Learn with Lane" />
+        <div>
+          <h2>Who wrote this</h2>
+          <p class="lead mt-16">I&rsquo;m David Lane. I&rsquo;ve spent more than twenty years in classrooms, hold a Master&rsquo;s in Educational Leadership and TESOL certification, and I homeschool my own teenager &mdash; which is where most of this book actually comes from.</p>
+          <p class="lead">I built the Playbook because I kept looking for an intervention resource for older students and kept finding material designed for kindergarteners. A struggling seventh grader knows exactly what a cartoon worksheet means. It means <em>you think I&rsquo;m a baby.</em> They shut down, and the reading gap gets wider.</p>
+          <p class="lead">So this one is built on structured-literacy principles &mdash; the same systematic phonics, fluency, and comprehension progression the science of reading points to &mdash; and dressed as a sports playbook, because a kid who has failed at reading can still be an athlete learning a system.</p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- FAQ -->
+    <section class="section">
+      <div class="container">
+        <h2 class="text-center">Questions</h2>
+        <div class="pb-faq mt-24">
+          <details>
+            <summary>How do I get the book after I pay?</summary>
+            <p>Checkout runs through Stripe. As soon as your payment clears, you&rsquo;re taken to a download page for the PDF. Nothing ships; nothing arrives in the post.</p>
+          </details>
+          <details>
+            <summary>Do I have to print all 100 pages?</summary>
+            <p>No. The book is designed to be worked in order, but each page stands alone &mdash; print a section at a time, or only the pages your student needs. It&rsquo;s laid out on US Letter and photocopies cleanly in black and white.</p>
+          </details>
+          <details>
+            <summary>My student is in fourth grade. Or ninth. Will it work?</summary>
+            <p>It might. The book starts past basic letter sounds and assumes a reader who can decode simple words but breaks down on longer ones. That describes a lot of fourth graders and a lot of ninth graders. The diagnostic pre-test on pages 4&ndash;5 will tell you within twenty minutes whether the starting point is right.</p>
+          </details>
+          <details>
+            <summary>How long does it take to get through?</summary>
+            <p>At fifteen minutes a day, most students take three to four months. There&rsquo;s no clock on it. Sections can be repeated, and the fluency passages are built to be read three times each.</p>
+          </details>
+          <details>
+            <summary>Is there an answer key?</summary>
+            <p>Yes &mdash; page 99, covering every closed-response item, with sample responses and coaching guidance for the open-ended ones.</p>
+          </details>
+          <details>
+            <summary>Can I use this with a small group or a class?</summary>
+            <p>Yes. It&rsquo;s used the same way in Tier 2 and Tier 3 intervention blocks, literacy centres, and tutoring. The Readers&rsquo; Theater scripts in particular are written for more than one reader.</p>
+          </details>
+          <details>
+            <summary>What&rsquo;s the refund policy?</summary>
+            <p>All sales are final. This is a digital download &mdash; once the PDF is in your hands it can&rsquo;t be returned. That&rsquo;s why the sample pages, the full page-by-page breakdown, and the &ldquo;probably not if&hellip;&rdquo; list are on this page: so you know what you&rsquo;re buying before you buy it. If a file won&rsquo;t open or a download fails, email me and I&rsquo;ll sort it out.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section">
+      <div class="container">
+        <div class="pb-final">
+          <div class="pb-stripes" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+          <h2>Fifteen minutes a day. One hundred pages. One reader who stops flinching.</h2>
+          <p>The Reading Playbook &mdash; phonics, fluency, and comprehension for grades 5&ndash;8.</p>
+          <div class="pb-price">
+            <span class="pb-price__amount">$9.99</span>
+            <span class="pb-price__note">one-time &middot; downloadable PDF</span>
+          </div>
+          <div class="mt-24">
+            <a class="btn" href="https://buy.stripe.com/eVq7sLcWUeXVgsqcA0dAk08" target="_blank" rel="noopener">Get the Playbook</a>
+          </div>
+          <p class="pb-final__fine">Secure checkout through Stripe &middot; Instant download &middot; All sales final &middot; Questions? <a href="mailto:david@learnwithlane.com" style="color:#fff;text-decoration:underline;">david@learnwithlane.com</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <h2>Contact me</h2>
+      <p>Email: <a href="mailto:david@learnwithlane.com">david@learnwithlane.com</a></p>
+      <p>Text: 405-459-7176</p>
+      <p>Line ID: lwldavid</p>
+      <p>WeChat: RealDeeLane</p>
+      <p>KaKao Talk: RealDeeLane</p>
+      <p>WhatsApp: Coming Soon</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
