@@ -150,8 +150,8 @@ p { color: var(--ink-soft); }
 .banner img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center bottom;
+  object-fit: contain;
+  object-position: center;
   opacity: 0.5;
 }
 
@@ -202,12 +202,11 @@ p { color: var(--ink-soft); }
 .heading-red { color: var(--red); }
 
 /* ---------- Centered CTA image ---------- */
-.cta-image {
-  display: flex;
-  justify-content: center;
-  padding: 40px 20px;
+.cta-image img {
+  width: 365px;
+  max-width: 100%;
+  margin: 0 auto;
 }
-.cta-image img { width: 365px; max-width: 100%; }
 
 /* ---------- Plain lists (steps, focus/rate/note) ---------- */
 .plain-list {
