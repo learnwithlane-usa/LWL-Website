@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Classroom | Learn with Lane</title>
+  <meta name="description" content="Enter the Learn with Lane virtual classroom. Choose the correct entrance for your location and join your live lesson." />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    /* ---------- Classroom page ---------- */
+    .browser-note {
+      background: #fef7e0;
+      border: 1px solid #f4c750;
+      border-radius: 4px;
+      color: #5f4200;
+      font-weight: 600;
+      font-size: 1rem;
+      text-align: center;
+      padding: 14px 20px;
+      margin: 24px auto 0;
+      max-width: calc(var(--max) - 40px);
+    }
+    .enter-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      max-width: 720px;
+      margin: 28px auto 0;
+    }
+    .enter-card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px 24px;
+      text-align: center;
+    }
+    .enter-card h3 { margin-bottom: 8px; }
+    .enter-card p { font-size: 0.95rem; margin-bottom: 20px; }
+    .btn--lg { font-size: 1.05rem; padding: 14px 28px; }
+    /* Responsive 16:9 embed wrapper */
+    .embed-wrap {
+      position: relative;
+      width: 100%;
+      max-width: 860px;
+      margin: 24px auto 0;
+      padding-top: 56.25%;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      overflow: hidden;
+      background: #000;
+    }
+    .embed-wrap iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    @media (max-width: 760px) {
+      .enter-grid { grid-template-columns: 1fr; gap: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="nav__brand" href="index.html">
+          <img src="images/logo.png" alt="Learn with Lane logo" />
+          Learn with Lane
+        </a>
+        <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__links" id="primary-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services-scheduling.html">Services &amp; Scheduling</a></li>
+          <li><a href="learning-games.html">Learning Games</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Browser requirement note -->
+    <div class="container">
+      <p class="browser-note">
+        &#9888; Before you enter: this classroom works only in <strong>Google Chrome</strong> or <strong>Safari</strong>. Please switch to one of these browsers if you are using another.
+      </p>
+    </div>
+
+    <!-- Enter the classroom -->
+    <section class="section section--center">
+      <div class="container">
+        <h1>Enter the Classroom</h1>
+        <p class="lead mt-16">Choose the entrance that matches your location, then click to join your live lesson.</p>
+
+        <div class="enter-grid">
+          <div class="enter-card">
+            <h3>Students in China</h3>
+            <p>Use this entrance if you are located inside mainland China.</p>
+            <a class="btn btn--lg" href="https://cn.teachwithkoala.com/?room=bdd5747c" target="_blank" rel="noopener">Enter Classroom (China)</a>
+          </div>
+          <div class="enter-card">
+            <h3>Everyone Else</h3>
+            <p>Use this entrance if you are located anywhere outside mainland China.</p>
+            <a class="btn btn--lg" href="https://classroom.teachwithkoala.com/?room=bdd5747c" target="_blank" rel="noopener">Enter Classroom</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- Video -->
+    <section class="section section--center">
+      <div class="container">
+        <h2>Watch This First</h2>
+        <div class="embed-wrap">
+          <iframe
+            src="https://www.youtube.com/embed/SktIMrVuDPk"
+            title="Learn with Lane classroom video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- Drive item -->
+    <section class="section section--center">
+      <div class="container">
+        <h2>Classroom Resource</h2>
+        <div class="embed-wrap">
+          <iframe
+            src="https://drive.google.com/file/d/1mEh56jpEXYICLSW1DX2fe8ppxVFEjIah/preview"
+            title="Learn with Lane classroom resource"
+            allow="autoplay"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <h2>Contact me</h2>
+      <p>Email: <a href="mailto:david@learnwithlane.com">david@learnwithlane.com</a></p>
+      <p>Text: 405-459-7176</p>
+      <p>Line ID: lwldavid</p>
+      <p>WeChat: RealDeeLane</p>
+      <p>KaKao Talk: RealDeeLane</p>
+      <p>WhatsApp: Coming Soon</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
