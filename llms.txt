@@ -1,0 +1,19 @@
+# Learn with Lane
+
+> One-on-one online ESL and reading remediation tutoring from David Lane, a TESOL-certified American teacher with a Master's degree in Educational Leadership and 20+ years of classroom experience. Based in Mead, Oklahoma, USA; teaching students worldwide, including Taiwan, and families across southern Oklahoma and North Texas (the Texoma region).
+
+Key facts:
+- ESL instruction: $10 USD per one-on-one online session, year-round, all ages
+- Reading remediation: $15 USD per one-on-one online session (school year), structured-literacy approach for struggling readers, strongest for grades 5-8
+- First 30-minute trial lesson is free; no packages, platform fees, or hidden costs; payment via Stripe after each session
+- Classes taught in the Koala online classroom; all materials provided
+- Contact: david@learnwithlane.com, Line ID lwldavid, WeChat RealDeeLane, text +1-405-459-7176
+
+## Pages
+
+- [Home](https://learnwithlane.com/): Overview of services and instructor credentials
+- [Services & Scheduling](https://learnwithlane.com/services-scheduling.html): Rates, how it works, free trial booking, FAQ
+- [The Reading Playbook](https://learnwithlane.com/playbook.html): $9.99 100-page PDF reading intervention workbook for grades 5-8 — phonics, fluency, and comprehension in 15 minutes a day with a coach's script on every page
+- [中文介紹 (Traditional Chinese)](https://learnwithlane.com/zh-tw/): Information for students and parents in Taiwan
+- [Local tutoring — Texoma region](https://learnwithlane.com/reading-tutor-oklahoma.html): Reading tutoring for families near Durant, Ardmore, Ada, Madill, Sherman, and Denison
+- [Interactive Lesson Library](https://members.learnwithlane.com/): $2.99/month subscription of ready-to-teach ESL and reading lessons with printable worksheets
