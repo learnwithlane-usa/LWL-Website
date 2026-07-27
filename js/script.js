@@ -36,4 +36,32 @@
       answer.style.maxHeight = isOpen ? answer.scrollHeight + "px" : null;
     });
   });
+
+  /* ---------- New Student Introduction form ---------- */
+  var introForm = document.getElementById("introForm");
+  if (introForm) {
+    introForm.addEventListener("submit", function (e) {
+      var action = introForm.getAttribute("action") || "";
+
+      if (action.indexOf("REPLACE_WITH_") !== -1) {
+        e.preventDefault();
+        var warning = document.createElement("p");
+        warning.className = "form-help";
+        warning.style.color = "#d93025";
+        warning.textContent =
+          "This form isn't connected yet. Please email david@learnwithlane.com directly with your student's details for now.";
+        introForm.parentNode.insertBefore(warning, introForm);
+        return;
+      }
+
+      // Let the real POST to Mailchimp proceed (opens in a new tab via
+      // target="_blank"). Show our own on-page thank-you immediately.
+      var success = document.getElementById("introFormSuccess");
+      if (success) {
+        introForm.hidden = true;
+        success.hidden = false;
+        success.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    });
+  }
 })();
