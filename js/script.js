@@ -39,11 +39,8 @@
 
   /* ---------- New Student Introduction form ---------- */
   var introForm = document.getElementById("introForm");
-  var hiddenFrame = document.getElementById("hidden_iframe");
 
-  if (introForm && hiddenFrame) {
-    var justSubmitted = false;
-
+  if (introForm) {
     introForm.addEventListener("submit", function (e) {
       var action = introForm.getAttribute("action") || "";
 
@@ -58,18 +55,33 @@
         return;
       }
 
-      // Real submission: POSTs into the hidden iframe (no page navigation).
-      // Once the iframe finishes loading the response, send the visitor on
-      // to the classroom instead of showing an on-page thank-you.
-      justSubmitted = true;
-    });
+      // Submit as a background beacon (not a hidden iframe — many browsers
+      // and ad/tracking blockers silently swallow hidden cross-site iframe
+      // posts). sendBeacon is the standard, purpose-built API for "fire a
+      // POST, then leave the page" and survives the navigation below.
+      e.preventDefault();
 
-    // The iframe fires a "load" event once on initial blank load, and again
-    // after the form POST completes. Only redirect on the post-submit load.
-    hiddenFrame.addEventListener("load", function () {
-      if (justSubmitted) {
-        window.location.href = "https://learnwithlane.com/classroom";
+      var params = new URLSearchParams(new FormData(introForm));
+      var body = params.toString();
+
+      if (navigator.sendBeacon) {
+        navigator.sendBeacon(
+          action,
+          new Blob([body], { type: "application/x-www-form-urlencoded" })
+        );
+      } else if (window.fetch) {
+        fetch(action, {
+          method: "POST",
+          mode: "no-cors",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: body,
+          keepalive: true,
+        }).catch(function () {
+          /* Response is opaque in no-cors mode; nothing to read either way. */
+        });
       }
+
+      window.location.href = "https://learnwithlane.com/classroom";
     });
   }
 })();
