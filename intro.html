@@ -54,6 +54,11 @@
     </div>
   </header>
 
+  <!-- Top banner -->
+  <div class="banner">
+    <img src="images/banner.png" alt="Learn with Lane — Connecting You to the World of English" />
+  </div>
+
   <main id="main">
     <!-- Hero -->
     <section class="section section--center">
@@ -68,29 +73,24 @@
     <!-- Intro form -->
     <section class="section" id="intro-form">
       <div class="container" style="max-width: 760px;">
-        <form class="intro-form" id="introForm" action="https://learnwithlane.us1.list-manage.com/subscribe/post?u=REPLACE_WITH_U&amp;id=REPLACE_WITH_ID&amp;f_id=REPLACE_WITH_FID" method="post" target="_blank" novalidate>
+        <form class="intro-form" id="introForm" action="https://docs.google.com/forms/d/e/REPLACE_WITH_FORM_ID/formResponse" method="post" target="hidden_iframe" novalidate>
 
           <div class="form-fieldset">
             <h2 class="form-legend">Student Information</h2>
 
             <div class="form-group">
-              <label for="studentFullName">Student&rsquo;s Full / Legal Name *</label>
-              <input type="text" id="studentFullName" name="MMERGE_STUDENT_NAME" required placeholder="e.g. Maria Jos&eacute; Garc&iacute;a" />
-            </div>
-
-            <div class="form-group">
               <label for="studentPreferredName">Preferred Name / English Name</label>
-              <input type="text" id="studentPreferredName" name="MMERGE_STUDENT_PREFERRED" placeholder="e.g. Maria" />
+              <input type="text" id="studentPreferredName" name="entry.REPLACE_STUDENT_PREFERRED" placeholder="e.g. Maria" />
             </div>
 
             <div class="form-row">
               <div class="form-group">
                 <label for="studentAge">Student&rsquo;s Age *</label>
-                <input type="number" id="studentAge" name="MMERGE_STUDENT_AGE" min="5" max="99" required placeholder="e.g. 8" />
+                <input type="number" id="studentAge" name="entry.REPLACE_STUDENT_AGE" min="5" max="99" required placeholder="e.g. 8" />
               </div>
               <div class="form-group">
                 <label for="timezone">Timezone *</label>
-                <select id="timezone" name="MMERGE_TIMEZONE" required>
+                <select id="timezone" name="entry.REPLACE_TIMEZONE" required>
                   <option value="">&mdash; Select your timezone &mdash;</option>
                   <option>US/Pacific</option>
                   <option>US/Mountain</option>
@@ -116,23 +116,25 @@
 
             <div class="form-group">
               <label for="EMAIL">Parent / Guardian Email *</label>
-              <input type="email" id="EMAIL" name="EMAIL" required placeholder="parent@example.com" />
+              <input type="email" id="EMAIL" name="entry.REPLACE_EMAIL" required placeholder="parent@example.com" />
             </div>
 
             <div class="form-row">
               <div class="form-group">
-                <label for="FNAME">Parent / Guardian First Name *</label>
-                <input type="text" id="FNAME" name="FNAME" required placeholder="e.g. Elena" />
+                <label for="contactMethod">Preferred Contact Method</label>
+                <select id="contactMethod" name="entry.REPLACE_CONTACT_METHOD">
+                  <option value="">&mdash; Select &mdash;</option>
+                  <option>Text</option>
+                  <option>Line</option>
+                  <option>WeChat</option>
+                  <option>KaKao Talk</option>
+                  <option>WhatsApp</option>
+                </select>
               </div>
               <div class="form-group">
-                <label for="LNAME">Parent / Guardian Last Name</label>
-                <input type="text" id="LNAME" name="LNAME" placeholder="e.g. Garc&iacute;a" />
+                <label for="secondaryContact">Username or Number</label>
+                <input type="text" id="secondaryContact" name="entry.REPLACE_CONTACT_VALUE" placeholder="e.g. 555-123-4567 or username" />
               </div>
-            </div>
-
-            <div class="form-group">
-              <label for="secondaryContact">Secondary Contact (Phone, WhatsApp, Line, etc.)</label>
-              <input type="text" id="secondaryContact" name="MMERGE_PHONE" placeholder="+1 (555) 123-4567 or WhatsApp username" />
             </div>
           </div>
 
@@ -141,7 +143,7 @@
 
             <div class="form-group">
               <label for="englishLevel">Current English Proficiency Level *</label>
-              <select id="englishLevel" name="MMERGE_ENGLISH_LEVEL" required>
+              <select id="englishLevel" name="entry.REPLACE_ENGLISH_LEVEL" required>
                 <option value="">&mdash; Select a level &mdash;</option>
                 <option>Beginner</option>
                 <option>Intermediate</option>
@@ -152,42 +154,23 @@
             <div class="form-group">
               <label>Primary Learning Goals (select all that apply)</label>
               <div class="checkbox-group">
-                <label class="checkbox"><input type="checkbox" name="MMERGE_GOALS_FLUENCY" value="Conversational Fluency" /> Conversational Fluency</label>
-                <label class="checkbox"><input type="checkbox" name="MMERGE_GOALS_READING" value="Reading Comprehension" /> Reading Comprehension</label>
-                <label class="checkbox"><input type="checkbox" name="MMERGE_GOALS_GRAMMAR" value="Grammar Mastery" /> Grammar Mastery</label>
-                <label class="checkbox"><input type="checkbox" name="MMERGE_GOALS_PHONICS" value="Phonics" /> Phonics</label>
-                <label class="checkbox"><input type="checkbox" name="MMERGE_GOALS_GENERAL" value="General ESL" /> General ESL</label>
+                <label class="checkbox"><input type="checkbox" name="entry.REPLACE_GOALS" value="Conversational Fluency" /> Conversational Fluency</label>
+                <label class="checkbox"><input type="checkbox" name="entry.REPLACE_GOALS" value="Reading Comprehension" /> Reading Comprehension</label>
+                <label class="checkbox"><input type="checkbox" name="entry.REPLACE_GOALS" value="Grammar Mastery" /> Grammar Mastery</label>
+                <label class="checkbox"><input type="checkbox" name="entry.REPLACE_GOALS" value="Phonics" /> Phonics</label>
+                <label class="checkbox"><input type="checkbox" name="entry.REPLACE_GOALS" value="General ESL" /> General ESL</label>
               </div>
             </div>
 
             <div class="form-group">
               <label for="focusAreas">Specific Focus Areas or Challenges</label>
-              <textarea id="focusAreas" name="MMERGE_FOCUS_AREAS" rows="3" placeholder="Is there something specific about English or reading that's difficult? Example: 'She struggles with past tense' or 'He wants to improve pronunciation.'"></textarea>
+              <textarea id="focusAreas" name="entry.REPLACE_FOCUS_AREAS" rows="3" placeholder="Is there something specific about English or reading that's difficult? Example: 'She struggles with past tense' or 'He wants to improve pronunciation.'"></textarea>
             </div>
 
             <div class="form-group">
               <label for="interests">Student Interests &amp; Hobbies</label>
-              <textarea id="interests" name="MMERGE_INTERESTS" rows="3" placeholder="What does your student enjoy? (sports, books, gaming, music, animals, etc.) This helps me customize lessons!"></textarea>
+              <textarea id="interests" name="entry.REPLACE_INTERESTS" rows="3" placeholder="What does your student enjoy? (sports, books, gaming, music, animals, etc.) This helps me customize lessons!"></textarea>
             </div>
-          </div>
-
-          <div class="form-fieldset">
-            <h2 class="form-legend">Technical Setup</h2>
-            <div class="form-group">
-              <label for="primaryDevice">Primary Device for Classes *</label>
-              <select id="primaryDevice" name="MMERGE_DEVICE" required>
-                <option value="">&mdash; Select a device &mdash;</option>
-                <option>Desktop / Laptop</option>
-                <option>Tablet</option>
-                <option>Smartphone</option>
-              </select>
-              <p class="form-help">A computer or tablet is recommended so you can see shared materials clearly.</p>
-            </div>
-          </div>
-
-          <!-- Mailchimp bot-field (standard anti-spam honeypot) -->
-          <div aria-hidden="true" style="position:absolute; left:-5000px;">
-            <input type="text" name="b_2ead71c5ca41382648058c5be_b974a35a8d" tabindex="-1" value="" />
           </div>
 
           <div class="form-group">
@@ -197,10 +180,7 @@
           <p class="form-required text-center">* Required fields</p>
         </form>
 
-        <div class="form-success" id="introFormSuccess" hidden>
-          <h2>Thank you!</h2>
-          <p>Your information has been received. I&rsquo;ll review it before our first lesson &mdash; see you soon!</p>
-        </div>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" title="form-submit-target"></iframe>
       </div>
     </section>
 
@@ -211,7 +191,7 @@
       <div class="container">
         <h2>Trouble With the Form?</h2>
         <p class="lead mt-16">No problem &mdash; just send your student&rsquo;s details directly instead.</p>
-        <p class="mt-16">Email: <a href="mailto:david@learnwithlane.com">david@learnwithlane.com</a> &middot; Text: 405-459-7176 &middot; Line ID: lwldavid &middot; WeChat: RealDeeLane &middot; WhatsApp: LWLDavid</p>
+        <p class="mt-16">Email: <a href="mailto:david@learnwithlane.com">david@learnwithlane.com</a></p>
       </div>
     </section>
   </main>

@@ -39,7 +39,11 @@
 
   /* ---------- New Student Introduction form ---------- */
   var introForm = document.getElementById("introForm");
-  if (introForm) {
+  var hiddenFrame = document.getElementById("hidden_iframe");
+
+  if (introForm && hiddenFrame) {
+    var justSubmitted = false;
+
     introForm.addEventListener("submit", function (e) {
       var action = introForm.getAttribute("action") || "";
 
@@ -54,13 +58,17 @@
         return;
       }
 
-      // Let the real POST to Mailchimp proceed (opens in a new tab via
-      // target="_blank"). Show our own on-page thank-you immediately.
-      var success = document.getElementById("introFormSuccess");
-      if (success) {
-        introForm.hidden = true;
-        success.hidden = false;
-        success.scrollIntoView({ behavior: "smooth", block: "start" });
+      // Real submission: POSTs into the hidden iframe (no page navigation).
+      // Once the iframe finishes loading the response, send the visitor on
+      // to the classroom instead of showing an on-page thank-you.
+      justSubmitted = true;
+    });
+
+    // The iframe fires a "load" event once on initial blank load, and again
+    // after the form POST completes. Only redirect on the post-submit load.
+    hiddenFrame.addEventListener("load", function () {
+      if (justSubmitted) {
+        window.location.href = "https://learnwithlane.com/classroom";
       }
     });
   }
