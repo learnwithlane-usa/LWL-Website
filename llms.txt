@@ -4,7 +4,7 @@
 
 Key facts:
 - ESL instruction: $10 USD per one-on-one online session, year-round, all ages
-- Reading remediation: $15 USD per one-on-one online session (school year), structured-literacy approach for struggling readers, strongest for grades 5-8
+- Reading remediation: $10 USD per one-on-one online session (school year), structured-literacy approach for struggling readers, strongest for grades 5-8
 - First 30-minute trial lesson is free; no packages, platform fees, or hidden costs; payment via Stripe after each session
 - Classes taught in the Koala online classroom; all materials provided
 - Contact: david@learnwithlane.com, Line ID lwldavid, WeChat RealDeeLane, text +1-405-459-7176
