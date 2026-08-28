@@ -8,7 +8,14 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'G-NKSDMGBV1S');
+    // Record /index.html as / so GA4 does not split one page into two rows.
+    (function () {
+      var loc = window.location;
+      var path = loc.pathname.replace(/\/index\.html$/i, '/');
+      gtag('config', 'G-NKSDMGBV1S', {
+        page_location: loc.origin + path + loc.search + loc.hash
+      });
+    })();
   </script>
 
   <meta charset="UTF-8" />
@@ -94,7 +101,7 @@
   <header class="site-header">
     <div class="container">
       <nav class="nav" aria-label="Primary">
-        <a class="nav__brand" href="index.html">
+        <a class="nav__brand" href="/">
           <img src="images/logo.png" alt="Learn with Lane logo" />
           Learn with Lane
         </a>
@@ -102,7 +109,7 @@
           <span></span><span></span><span></span>
         </button>
         <ul class="nav__links" id="primary-menu">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="/">Home</a></li>
           <li><a href="services-scheduling.html">Services &amp; Scheduling</a></li>
           <li><a href="playbook.html">Reading Playbook</a></li>
           <li><a href="members/">Members Area</a></li>
