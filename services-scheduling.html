@@ -53,7 +53,7 @@
       {
         "@type": "Question",
         "name": "How do payments work after the free trial lesson?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Once we build a schedule that works for you, you'll book ongoing sessions through the regular booking calendar above, and a secure invoice is emailed to you automatically after each booking." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Once we build a schedule that works for you, you can book ongoing sessions through the booking calendar above with direct, secure payment via Stripe (credit/debit cards, Apple Pay, Google Pay)." }
       },
       {
         "@type": "Question",
@@ -83,6 +83,7 @@
     "offers": [
       { "@type": "Offer", "name": "ESL Instruction (1-on-1, online)", "price": "10", "priceCurrency": "USD" },
       { "@type": "Offer", "name": "Reading Remediation (1-on-1, online)", "price": "10", "priceCurrency": "USD" },
+      { "@type": "Offer", "name": "Comprehensive Reading & Language Session (60 min)", "price": "20", "priceCurrency": "USD" },
       { "@type": "Offer", "name": "Free 30-minute trial lesson", "price": "0", "priceCurrency": "USD" }
     ]
   }
@@ -174,21 +175,20 @@
 
     <!-- Schedule -->
     <section class="section" id="book">
-      <div class="container split">
-        <div class="split__copy">
-          <h2>Schedule Your Free Trial Lesson</h2>
-          <p class="lead">New to Learn with Lane? Select a time that works best for you, then complete the short New Student Introduction so I can prepare for our first meeting!</p>
-          <div class="mt-24">
-            <a class="btn btn--block" href="https://calendar.app.google/vVznyxch7A5tmN8D8" target="_blank" rel="noopener">Book My Free Trial Lesson</a>
-          </div>
-          <div class="mt-16">
-            <a class="btn btn--block" href="intro.html" style="background: var(--brand-blue-dark);">Already Booked? Complete Your Introduction</a>
+      <div class="container">
+        <div class="text-center" style="max-width: 760px; margin: 0 auto 32px;">
+          <h2>Schedule Your Lesson</h2>
+          <p class="lead">Select your session below to view real-time availability and book online. New to Learn with Lane? Start with a complimentary 30-minute Free Trial Lesson!</p>
+          <div style="display: flex; justify-content: center; gap: 12px; margin-top: 20px; flex-wrap: wrap;">
+            <a class="btn" href="https://cal.com/learnwithlane/30min" target="_blank" rel="noopener">Book Free Trial (30 min)</a>
+            <a class="btn btn--secondary" href="https://cal.com/learnwithlane" target="_blank" rel="noopener">Browse All Sessions</a>
+            <a class="btn btn--outline" href="intro.html">Already Booked? Introduction Form</a>
           </div>
         </div>
-        <div class="split__media">
-          <a href="https://calendar.app.google/vVznyxch7A5tmN8D8" target="_blank" rel="noopener">
-            <img src="images/book-now-icon.webp" alt="Book now with Learn with Lane" loading="lazy" />
-          </a>
+
+        <!-- Cal.com Responsive Embed Container -->
+        <div class="calendar-wrap">
+          <div id="my-cal-inline" style="width:100%;height:100%;min-height:700px;overflow:auto;"></div>
         </div>
       </div>
     </section>
@@ -205,7 +205,7 @@
           <h3>Do I need to buy textbooks?</h3>
           <p>Answer: No. I provide all digital materials, interactive games, and customized worksheets tailored to your student's plan.</p>
           <h3>How do payments work after the free trial lesson?</h3>
-          <p>Answer: Once we build a schedule that works for you, you'll book ongoing sessions through the regular booking calendar above, and a secure invoice is emailed to you automatically after each booking.</p>
+          <p>Answer: Once we build a schedule that works for you, you can book ongoing sessions through the booking calendar above with direct, secure payment via Stripe (credit/debit cards, Apple Pay, Google Pay).</p>
           <h3>Do you teach students in Taiwan and other time zones?</h3>
           <p>Answer: Yes. I welcome ESL students from Taiwan and across Asia, and schedule classes at times that work for Taiwan and other Asian time zones. You can reach me directly on Line (lwldavid), WeChat, or WhatsApp to set up a free trial lesson. <a href="zh-tw/" lang="zh-Hant">中文介紹頁在這裡</a>.</p>
           <h3>Do you work with local families in Oklahoma and North Texas?</h3>
@@ -230,5 +230,26 @@
   </footer>
 
   <script src="js/script.js"></script>
+  <!-- Cal.com Embed Code -->
+  <script type="text/javascript">
+    (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return api; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+    Cal("init", {origin: "https://cal.com"});
+
+    Cal("ui", {
+      "theme": "light",
+      "cssVarsPerTheme": {
+        "light": {"cal-brand": "#1a73e8"},
+        "dark": {"cal-brand": "#1a73e8"}
+      },
+      "hideEventTypeDetails": false,
+      "layout": "month_view"
+    });
+
+    Cal("inline", {
+      elementOrSelector: "#my-cal-inline",
+      config: {"layout": "month_view"},
+      calLink: "learnwithlane"
+    });
+  </script>
 </body>
 </html>

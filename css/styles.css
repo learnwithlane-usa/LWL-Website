@@ -162,6 +162,10 @@ p { color: var(--ink-soft); }
   transition: background 0.15s ease;
 }
 .btn:hover { background: var(--brand-blue-dark); text-decoration: none; }
+.btn--secondary { background: #d8893f; color: #fff; }
+.btn--secondary:hover { background: #c2752d; color: #fff; }
+.btn--outline { background: transparent; border: 1.5px solid var(--brand-blue); color: var(--brand-blue); }
+.btn--outline:hover { background: rgba(26, 115, 232, 0.08); color: var(--brand-blue-dark); }
 
 .page-image { padding: 28px 0 0; }
 .page-image img { width: 100%; border-radius: 4px; }
