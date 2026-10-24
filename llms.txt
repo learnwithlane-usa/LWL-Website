@@ -1,13 +1,13 @@
 # Learn With Lane
 
-> English for students in grades 4-8 from David Lane, a TESOL-certified American teacher with a Master's degree in Educational Leadership and 20+ years of classroom experience. Based in Mead, Oklahoma, USA. Three offers: live online homeschool group classes for Oklahoma families, one-on-one online English lessons for children learning English (including students in Taiwan), and printable workbooks sold on Teachers Pay Teachers.
+> English for students in grades 4-8 from David Lane, an Oklahoma-certified English teacher (Standard certificate: English 5-12 and Mid-Level English 5-8, valid through 2031), TESOL-certified, with a Master's degree in Educational Leadership and 20+ years of classroom experience. Based in Mead, Oklahoma, USA. Three offers: live online homeschool group classes for Oklahoma families, one-on-one online English lessons for children learning English (including students in Taiwan), and printable workbooks sold on Teachers Pay Teachers.
 
 Key facts:
 - Homeschool classes: Creature Card Lab, a live online English class for grades 4-8 (6 weekly 45-minute sessions, 6 seats). Students invent creature cards and write names, descriptions, stats, battle rules and trade pitches; each student's finished card is printed, put in a display case and mailed home. Planned for winter 2027; families join a class list first, and dates and price go to the list.
 - Oklahoma Parental Choice Tax Credit: homeschool families may claim up to $1,000 per homeschooled student for qualified expenses, which include online learning tuition and academic tutoring; receipts are required. Learn With Lane gives an itemized receipt per student. Details: https://oklahoma.gov/tax/individuals/parental-choice-tax-credit/pctc-taxpayers.html
 - One-on-one English lessons: 30 minutes, online, booked at https://cal.com/learnwithlane. Free Talk (conversation practice) $10 USD; Lesson Provided (lesson with materials) $15 USD. The first 30-minute trial lesson is free. Payment by card through Stripe at booking.
 - Workbooks: phonics, grammar, reading comprehension, morphology, executive functioning and self-advocacy packs at https://www.teacherspayteachers.com/store/learn-with-lane. Print editions are planned for Amazon.
-- Contact: david@learnwithlane.com, Line ID lwldavid, text +1-405-459-7176
+- Contact: david@learnwithlane.com, LINE ID lwldavid, call or text +1-405-459-7176
 
 ## Pages
 
