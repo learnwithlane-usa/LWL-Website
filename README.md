@@ -1,61 +1,43 @@
 # Learn With Lane — Website
 
-Static GitHub Pages site for Learn With Lane: independent ESL and reading-remediation
-instruction based in Durant, Oklahoma. Pages mirror the original Google Sites layout.
+learnwithlane.com: GitHub Pages with Jekyll on. Pushes to `main` go live in about a minute.
+Redesign plan and status: `G:/AI/Business/Learn With Lane/WEBSITE_REDESIGN_PLAN.md`.
 
-## Pages
+## Pages (after redesign step 1, 2026-10-24)
 
 | File | Purpose |
 |------|---------|
-| `index.html` | Home — hero, credibility, services overview, "coming soon" local classes |
-| `services-scheduling.html` | How it works, rates, booking calendar, FAQ |
-| `learning-games.html` | Consonant Crash showcase, newsletter signup, Stripe donation |
+| `index.html` | Home: hero, three doors (classes, English lessons, workbooks), About David, free-worksheets strip |
+| `oklahoma-homeschool-classes.html` | Creature Card Lab, PCTC note, email class list (step 3 adds the Cal.com series booking) |
+| `services-scheduling.html` | One-on-one English lessons, rates, booking (nav label "English Lessons"; step 5 replaces it) |
+| `workbooks.html` | Paid TPT packs (grid copied from the free page's "Full Packs" section) |
+| `free-phonics-worksheets.html` | Free TPT samplers + full packs (step 6 turns it into a filterable library) |
+| `zh-tw/index.html` | Taiwan ESL page, own Chinese header/footer (not the shared include) |
+| `reading-tutor-oklahoma.html`, `intro.html`, `classroom.html`, `privacy.html`, `terms.html`, `404.html` | Older pages on the shared header/footer |
+| `playbook.html`, `learning-tools/` | Redirect stubs to Free Worksheets. `playbook-access-f5a238088a20.html` stays live, unlinked, for direct buyers |
 
-## Structure
+## How pages are built
+
+- Every page except `zh-tw/` and the redirect stubs starts with front matter (`---` / `---`) and uses
+  `{% include head-fonts.html %}`, `{% include header.html %}`, `{% include footer.html %}` from `_includes/`.
+  A nav change is one edit in `_includes/header.html`.
+- The gold header button reads `page.header_cta_text` / `page.header_cta_url` from front matter, default
+  "Join the class list". The current page is underlined by `js/script.js`.
+- Keep Liquid to those forms; `tools/preview.py` only understands them.
+
+## Local preview (no Ruby on this machine)
 
 ```
-.
-├── index.html
-├── services-scheduling.html
-├── learning-games.html
-├── css/styles.css        # mobile-first, brand colors, no dependencies
-├── js/script.js          # mobile menu, FAQ accordion, newsletter handling
-├── images/               # web-ready images used by the pages
-├── CNAME                 # custom domain: learnwithlane.com
-└── _config.yml           # excludes planning docs from the published build
+python tools/preview.py               # builds _preview/ and serves http://localhost:4000
+python tools/preview.py --port 8765   # what G:/AI/.claude/launch.json "lwl-site" runs
 ```
 
-The `Hero Images/` and `Preproject Planning/` folders and the `*.md` planning docs
-are kept in the repo for reference but excluded from the published site via `_config.yml`.
+## Brand
 
-## Brand colors
-
-| Token | Hex | Use |
-|-------|-----|-----|
-| Primary blue | `#007bbf` | Headlines, primary buttons, links |
-| Secondary orange | `#d8893f` | Secondary buttons, accents |
-| Accent yellow | `#fbe9b2` | Hero wash, "coming soon" banner |
-| Ink | `#2b2b2b` | Body text |
-
-## Things to finish wiring up
-
-These are intentionally left as clearly-marked placeholders:
-
-1. **Booking calendar embed** (`services-scheduling.html`)
-   Google's `calendar.app.google/...` short link is a *page* link and does not embed
-   reliably in an `<iframe>`. To get a true inline calendar, in Google Calendar open
-   your appointment schedule → **Share / Embed** → copy the provided `<iframe>` code and
-   replace the placeholder iframe in the booking section. The "Open in a new tab" link
-   below the calendar already points at your real short link and works as-is.
-
-2. **MailChimp newsletter** (`learning-games.html`)
-   In Mailchimp: **Audience → Signup forms → Embedded forms**, copy the form's `action`
-   URL, and paste it into the `action="..."` attribute on the `<form data-newsletter>`.
-   Keep the input names `EMAIL` and `FNAME`. Until then the form shows a friendly
-   "not connected yet" message instead of submitting.
-
-3. **Stripe donation** and **Consonant Crash** links are live and already point at the
-   real URLs.
+Navy `#1d4e6f`, gold `#f5c542`, orange accent `#d8893f`, cream `#fffaf0`, line `#e6dcc8`.
+Headings Baloo 2, accents Patrick Hand (Google Fonts), body system sans. Tokens live at the top of
+`css/styles.css`. Owl art in `images/owl-*.svg` is copied from `G:/AI/Clipart/lwl_owl_color_*.svg`.
+`images/share-home.png` comes from `TPT_Launch_Packs/_store_graphics/build_site_graphics.py` (`share_home()`).
 
 ## Deploy
 
