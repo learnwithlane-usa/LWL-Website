@@ -627,3 +627,34 @@ p { color: var(--ink-soft); }
   background: #f4faf5;
 }
 .form-success h2 { color: #1a7f37; margin-bottom: 12px; }
+
+/* ---------- Class list sign-up (Brevo, oklahoma-homeschool-classes.html) ---------- */
+.signup {
+  max-width: 460px;
+  margin: 28px auto 0;
+  padding: 28px 24px 20px;
+  background: var(--paper);
+  color: var(--ink);
+  border-radius: var(--radius);
+  border-top: 6px solid var(--gold);
+  text-align: left;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+}
+.signup .form-group:last-of-type { margin-bottom: 24px; }
+.signup__btn { width: 100%; justify-content: center; }
+.signup__btn[disabled] { opacity: 0.7; cursor: wait; }
+.signup__trap {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+.signup__status { margin-top: 14px; font-weight: 600; }
+.signup__status:empty { display: none; }
+.signup__status.is-ok, .section--navy .signup__status.is-ok { color: #1a7f37; }
+.signup__status.is-error, .section--navy .signup__status.is-error { color: #b42318; }
+.signup__fine,
+.section--navy .signup__fine { margin-top: 14px; font-size: 0.85rem; color: var(--ink-soft); }
+.signup__fine a { color: var(--navy); }
+.signup [hidden] { display: none !important; }

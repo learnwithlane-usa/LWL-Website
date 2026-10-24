@@ -95,4 +95,40 @@
       window.location.href = "https://learnwithlane.com/classroom";
     });
   }
+
+  /* ---------- Brevo sign-up forms (form[data-brevo]) ---------- */
+  // Without JS the form posts straight to Brevo and shows Brevo's page.
+  // With JS it posts in the background (?isAjax=1 returns JSON) and the
+  // message from the Brevo form's Messages step is shown in place.
+  document.querySelectorAll("form[data-brevo]").forEach(function (form) {
+    var status = form.querySelector(".signup__status");
+    var button = form.querySelector("button[type=submit]");
+
+    function say(text, ok) {
+      status.textContent = text;
+      status.className = "signup__status " + (ok ? "is-ok" : "is-error");
+    }
+
+    form.addEventListener("submit", function (e) {
+      if (!window.fetch) return;
+      e.preventDefault();
+      button.disabled = true;
+      fetch(form.action + "?isAjax=1", { method: "POST", body: new FormData(form) })
+        .then(function (r) { return r.json(); })
+        .then(function (data) {
+          if (data.success) {
+            form.querySelectorAll(".form-group, button").forEach(function (el) { el.hidden = true; });
+            say(data.message, true);
+            if (window.gtag) gtag("event", "generate_lead", { form: form.id });
+          } else {
+            say(data.message || "That didn't go through. Check the fields and try again.", false);
+            button.disabled = false;
+          }
+        })
+        .catch(function () {
+          say("That didn't go through. Please try again, or call or text 405-459-7176.", false);
+          button.disabled = false;
+        });
+    });
+  });
 })();

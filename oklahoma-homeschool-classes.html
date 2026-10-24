@@ -95,10 +95,35 @@
       <div class="container">
         <h2>Join the class list</h2>
         <p class="lead mt-16" style="max-width: 40em; margin-left: auto; margin-right: auto;">Dates, times and price come out first to families on the list. A class opens once enough families sign up, so you won&rsquo;t sign up for something that gets canceled.</p>
-        <div class="btn-row mt-24">
-          <a class="btn" href="mailto:david@learnwithlane.com?subject=Creature%20Card%20Lab%20class%20list&amp;body=Please%20add%20us%20to%20the%20class%20list.%0A%0AChild%27s%20grade%3A%20%0ABest%20class%20time%20(morning%20or%20afternoon)%3A%20">Email me to join the list</a>
-        </div>
-        <p class="mt-16">Or write to <a href="mailto:david@learnwithlane.com" style="color:#fff">david@learnwithlane.com</a> with your child&rsquo;s grade.</p>
+        <!-- Brevo form "Creature Card Lab class list" (list 5, double opt-in). GRADE values: 1=Grade 4 ... 5=Grade 8. -->
+        <form class="signup" id="classListForm" data-brevo method="POST" action="https://1a625fbb.sibforms.com/serve/MUIFAJSIkdL6ZbP5zWedzaE7VopadBsJk_v3RI0SYqx4-Cg67Gbdx7fFk6grGDS3q8EgQS3R_l9pGEqwGwSRAlUfH7oZGOeF9z8IlX_N19gkH6PPMK9NaalkKGd0ZeS5f6fXSPPZJMg0tv6dcPpKzKTZymdWu7Fx6MhvX62HNqcP36oAdCUc8uuUMMxI65i_idIArxBNRnx1Uu5jZg==">
+          <div class="form-group">
+            <label for="cl-first">Your first name</label>
+            <input type="text" id="cl-first" name="FIRSTNAME" maxlength="200" autocomplete="given-name" required />
+          </div>
+          <div class="form-group">
+            <label for="cl-email">Your email</label>
+            <input type="email" id="cl-email" name="EMAIL" autocomplete="email" required />
+          </div>
+          <div class="form-group">
+            <label for="cl-grade">Your child&rsquo;s grade</label>
+            <select id="cl-grade" name="GRADE" required>
+              <option value="" selected disabled>Choose a grade</option>
+              <option value="1">Grade 4</option>
+              <option value="2">Grade 5</option>
+              <option value="3">Grade 6</option>
+              <option value="4">Grade 7</option>
+              <option value="5">Grade 8</option>
+            </select>
+          </div>
+          <input type="text" name="email_address_check" value="" class="signup__trap" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <input type="hidden" name="locale" value="en" />
+          <input type="hidden" name="html_type" value="simple" />
+          <button class="btn signup__btn" type="submit">Join the class list</button>
+          <p class="signup__status" role="status" aria-live="polite"></p>
+          <p class="signup__fine">I&rsquo;ll send one email to confirm, then only class news. I ask for a parent&rsquo;s name and email and your child&rsquo;s grade, nothing else. <a href="/privacy.html">Privacy</a></p>
+        </form>
+        <p class="mt-16">Questions first? Call or text <a href="tel:+14054597176" style="color:#fff">405-459-7176</a>.</p>
       </div>
     </section>
   </main>
