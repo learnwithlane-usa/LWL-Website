@@ -9,11 +9,12 @@ Redesign plan and status: `G:/AI/Business/Learn With Lane/WEBSITE_REDESIGN_PLAN.
 |------|---------|
 | `index.html` | Home: hero, three doors (classes, English lessons, workbooks), About David, free-worksheets strip |
 | `oklahoma-homeschool-classes.html` | Creature Card Lab, PCTC note, email class list (step 3 adds the Cal.com series booking) |
-| `services-scheduling.html` | One-on-one English lessons, rates, booking (nav label "English Lessons"; step 5 replaces it) |
 | `workbooks.html` | Paid TPT packs (grid copied from the free page's "Full Packs" section) |
 | `free-phonics-worksheets.html` | Free TPT samplers + full packs (step 6 turns it into a filterable library) |
-| `zh-tw/index.html` | Taiwan ESL page, own Chinese header/footer (not the shared include) |
-| `reading-tutor-oklahoma.html`, `intro.html`, `classroom.html`, `privacy.html`, `terms.html`, `404.html` | Older pages on the shared header/footer |
+| `zh-tw/index.html` | English Lessons (the only ESL page): Conversational $15 / Structured $25, Cal.com booking, English summary. Own Chinese header/footer (not the shared include) |
+| `intro.html`, `classroom.html`, `privacy.html`, `terms.html`, `404.html` | Older pages on the shared header/footer |
+| `services-scheduling.html`, `schedule-a-class/` | Redirect stubs to `/zh-tw/` (English lessons moved there 2026-10-24) |
+| `reading-tutor-oklahoma.html` | Redirect stub to Homeschool Classes (reading tutoring no longer offered, 2026-10-24) |
 | `playbook.html`, `learning-tools/` | Redirect stubs to Free Worksheets. `playbook-access-f5a238088a20.html` stays live, unlinked, for direct buyers |
 
 ## How pages are built

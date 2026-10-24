@@ -5,7 +5,7 @@
 Key facts:
 - Homeschool classes: Creature Card Lab, a live online English class for grades 4-8 (6 weekly 45-minute sessions, 6 seats). Students invent creature cards and write names, descriptions, stats, battle rules and trade pitches; each student's finished card is printed, put in a display case and mailed home. Planned for winter 2027; families join a class list first, and dates and price go to the list.
 - Oklahoma Parental Choice Tax Credit: homeschool families may claim up to $1,000 per homeschooled student for qualified expenses, which include online learning tuition and academic tutoring; receipts are required. Learn With Lane gives an itemized receipt per student. Details: https://oklahoma.gov/tax/individuals/parental-choice-tax-credit/pctc-taxpayers.html
-- One-on-one English lessons: 30 minutes, online, booked at https://cal.com/learnwithlane. Free Talk (conversation practice) $10 USD; Lesson Provided (lesson with materials) $15 USD. The first 30-minute trial lesson is free. Payment by card through Stripe at booking.
+- One-on-one English lessons (ESL) for kids in upper elementary and middle school, mainly families in Taiwan: 30 minutes, online. Conversational English $15 USD (https://cal.com/learnwithlane/free-talk); Structured Lesson $25 USD, school English, reading, grammar, writing and CAP prep (https://cal.com/learnwithlane/lesson). The first 30-minute trial lesson is free (https://cal.com/learnwithlane/30min). Payment by card through Stripe at booking. Full details are on the Traditional Chinese page, which has an English summary.
 - Workbooks: phonics, grammar, reading comprehension, morphology, executive functioning and self-advocacy packs at https://www.teacherspayteachers.com/store/learn-with-lane. Print editions are planned for Amazon.
 - Contact: david@learnwithlane.com, LINE ID lwldavid, call or text +1-405-459-7176
 
@@ -13,8 +13,6 @@ Key facts:
 
 - [Home](https://learnwithlane.com/): About David Lane and the three offers
 - [Homeschool Classes](https://learnwithlane.com/oklahoma-homeschool-classes.html): Creature Card Lab, session plan, Oklahoma tax credit note, class list
-- [English Lessons](https://learnwithlane.com/services-scheduling.html): One-on-one online lessons, rates, free trial booking, FAQ
 - [Workbooks](https://learnwithlane.com/workbooks.html): The paid packs and bundles on Teachers Pay Teachers, including The Reading Playbook
 - [Free Phonics Worksheets](https://learnwithlane.com/free-phonics-worksheets.html): Free printable PDFs (phonics, reading comprehension, grammar, morphology, executive functioning, self-advocacy and grade 3 rounding) with links to the full packs
-- [中文介紹 (Traditional Chinese)](https://learnwithlane.com/zh-tw/): One-on-one online English lessons for students in Taiwan
-- [Reading tutoring, Texoma region](https://learnwithlane.com/reading-tutor-oklahoma.html): Online reading tutoring for families near Durant, Ardmore, Ada, Madill, Sherman and Denison
+- [English Lessons, 線上英文課 (Traditional Chinese, with an English summary)](https://learnwithlane.com/zh-tw/): One-on-one online English lessons, prices, free trial booking, FAQ
