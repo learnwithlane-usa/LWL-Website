@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +24,8 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
   <link rel="manifest" href="site.webmanifest" />
-  <link rel="stylesheet" href="css/styles.css" />
+  {% include head-fonts.html %}
+  <link rel="stylesheet" href="/css/styles.css" />
   <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/2ead71c5ca41382648058c5be/b974a35a8d81932113199ada4.js");</script>
   <!-- Meta Pixel Code -->
   <script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js'); fbq('init', '2257383038363577'); fbq('track', 'PageView');</script>
@@ -30,34 +33,8 @@
   <!-- End Meta Pixel Code -->
 </head>
 <body>
-  <a href="#main" class="skip-link">Skip to content</a>
+  {% include header.html %}
 
-  <!-- Header -->
-  <header class="site-header">
-    <div class="container">
-      <nav class="nav" aria-label="Primary">
-        <a class="nav__brand" href="index.html">
-          <img src="images/logo.png" alt="Learn with Lane logo" />
-          Learn with Lane
-        </a>
-        <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-menu">
-          <span></span><span></span><span></span>
-        </button>
-        <ul class="nav__links" id="primary-menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services-scheduling.html">Services &amp; Scheduling</a></li>
-          <li><a href="playbook.html">Reading Playbook</a></li>
-          <li><a href="members/">Members Area</a></li>
-          <li><a href="zh-tw/" lang="zh-Hant">中文</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Top banner -->
-  <div class="banner">
-    <img src="images/banner.png" alt="Learn with Lane — Connecting You to the World of English" />
-  </div>
 
   <main id="main">
     <!-- Hero -->
@@ -195,20 +172,6 @@
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <h2>Contact me</h2>
-      <p>Email: <a href="mailto:david@learnwithlane.com">david@learnwithlane.com</a></p>
-      <p>Text: 405-459-7176</p>
-      <p>Line ID: lwldavid</p>
-      <p>WeChat: RealDeeLane</p>
-      <p>KaKao Talk: RealDeeLane</p>
-      <p>WhatsApp: LWLDavid</p>
-      <p class="mt-16">&copy; 2026 Learn with Lane &middot; Mead, Oklahoma, USA &middot; Online tutoring worldwide</p>
-    </div>
-  </footer>
-
-  <script src="js/script.js"></script>
+  {% include footer.html %}
 </body>
 </html>

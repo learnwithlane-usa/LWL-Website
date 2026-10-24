@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,15 +23,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="p:domain_verify" content="962af5818bd65e0f8c1d504903f3348e" />
-  <title>Learn with Lane — Online ESL &amp; Reading Tutor | 1-on-1 with a Certified American Teacher</title>
-  <meta name="description" content="1-on-1 online English lessons with a TESOL-certified American teacher — 20+ years of classroom experience. ESL from $10/session, reading remediation from $15. Free trial lesson. Serving students worldwide, including Taiwan, and families across southern Oklahoma." />
+  <title>Learn With Lane | English Classes, Lessons and Workbooks for Grades 4&ndash;8</title>
+  <meta name="description" content="David Lane teaches English to kids in grades 4-8: live online homeschool classes for Oklahoma families, one-on-one online English lessons for kids learning English, and print-and-go workbooks. 20+ years in the classroom. Free worksheets and a free trial lesson." />
   <link rel="canonical" href="https://learnwithlane.com/" />
   <link rel="alternate" hreflang="en" href="https://learnwithlane.com/" />
   <link rel="alternate" hreflang="zh-Hant" href="https://learnwithlane.com/zh-tw/" />
   <link rel="alternate" hreflang="x-default" href="https://learnwithlane.com/" />
-  <meta property="og:title" content="Learn with Lane — Online ESL &amp; Reading Tutor | Certified American Teacher" />
-  <meta property="og:description" content="1-on-1 online English lessons with a TESOL-certified American teacher. ESL from $10/session. Free trial lesson — students worldwide welcome." />
-  <meta property="og:image" content="https://learnwithlane.com/images/banner.png" />
+  <meta property="og:title" content="Learn With Lane | English for Grades 4&ndash;8, Made in Oklahoma" />
+  <meta property="og:description" content="Live online homeschool classes, one-on-one English lessons and print-and-go workbooks from David Lane, a teacher with 20+ years in the classroom." />
+  <meta property="og:image" content="https://learnwithlane.com/images/share-home.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
   <meta property="og:url" content="https://learnwithlane.com/" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="en_US" />
@@ -39,21 +43,21 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
   <link rel="manifest" href="site.webmanifest" />
-  <link rel="stylesheet" href="css/styles.css" />
+  {% include head-fonts.html %}
+  <link rel="stylesheet" href="/css/styles.css" />
   <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/2ead71c5ca41382648058c5be/b974a35a8d81932113199ada4.js");</script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": ["LocalBusiness", "EducationalOrganization"],
+    "@type": "EducationalOrganization",
     "@id": "https://learnwithlane.com/#business",
-    "name": "Learn with Lane",
+    "name": "Learn With Lane",
     "url": "https://learnwithlane.com/",
-    "image": "https://learnwithlane.com/images/logo.png",
+    "image": "https://learnwithlane.com/images/share-home.png",
     "logo": "https://learnwithlane.com/images/logo.png",
-    "description": "One-on-one online ESL instruction and reading remediation tutoring with a TESOL-certified American teacher with 20+ years of classroom experience. Serving students worldwide, including Taiwan, and families across southern Oklahoma and North Texas.",
+    "description": "English instruction for students in grades 4-8: live online homeschool group classes for Oklahoma families, one-on-one online English lessons for children learning English, and printable phonics, grammar and reading workbooks. Taught by David Lane, a TESOL-certified teacher with a Master's degree in Educational Leadership and more than 20 years of classroom experience.",
     "email": "david@learnwithlane.com",
     "telephone": "+1-405-459-7176",
-    "priceRange": "$10–$25 per session",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Mead",
@@ -61,10 +65,9 @@
       "addressCountry": "US"
     },
     "areaServed": [
-      { "@type": "Country", "name": "United States" },
-      { "@type": "Country", "name": "Taiwan" },
       { "@type": "State", "name": "Oklahoma" },
-      { "@type": "State", "name": "Texas" }
+      { "@type": "Country", "name": "United States" },
+      { "@type": "Country", "name": "Taiwan" }
     ],
     "knowsLanguage": ["en"],
     "founder": {
@@ -80,13 +83,8 @@
       ]
     },
     "sameAs": [
-      "https://www.facebook.com/LearnWithLane"
-    ],
-    "makesOffer": [
-      { "@type": "Offer", "name": "Reading Remediation lesson with materials (1-on-1, online, 30 min)", "price": "15", "priceCurrency": "USD", "url": "https://learnwithlane.com/services-scheduling.html" },
-      { "@type": "Offer", "name": "ESL Free Talk conversation practice (1-on-1, online, 30 min)", "price": "10", "priceCurrency": "USD", "url": "https://learnwithlane.com/services-scheduling.html" },
-      { "@type": "Offer", "name": "In-Person Lesson (30 min, Bryan and Marshall counties OK, Grayson County TX)", "price": "25", "priceCurrency": "USD", "url": "https://learnwithlane.com/reading-tutor-oklahoma.html" },
-      { "@type": "Offer", "name": "The Reading Playbook (100-page PDF workbook, grades 3-8)", "price": "12.00", "priceCurrency": "USD", "url": "https://www.teacherspayteachers.com/Product/Reading-Playbook-16831558" }
+      "https://www.facebook.com/LearnWithLane",
+      "https://www.teacherspayteachers.com/store/learn-with-lane"
     ]
   }
   </script>
@@ -96,212 +94,116 @@
   <!-- End Meta Pixel Code -->
 </head>
 <body>
-  <a href="#main" class="skip-link">Skip to content</a>
-
-  <!-- Header -->
-  <header class="site-header">
-    <div class="container">
-      <nav class="nav" aria-label="Primary">
-        <a class="nav__brand" href="/">
-          <img src="images/logo.png" alt="Learn with Lane logo" />
-          Learn with Lane
-        </a>
-        <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-menu">
-          <span></span><span></span><span></span>
-        </button>
-        <ul class="nav__links" id="primary-menu">
-          <li><a href="/">Home</a></li>
-          <li><a href="services-scheduling.html">Services &amp; Scheduling</a></li>
-          <li><a href="playbook.html">Reading Playbook</a></li>
-          <li><a href="free-phonics-worksheets.html">Free Worksheets</a></li>
-          <li><a href="members/">Members Area</a></li>
-          <li><a href="zh-tw/" lang="zh-Hant">中文</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Top banner -->
-  <div class="banner">
-    <img src="images/banner.png" alt="Learn with Lane — Connecting You to the World of English" />
-  </div>
+  {% include header.html %}
 
   <main id="main">
-    <!-- Hero: photo left, copy right -->
-    <section class="section">
-      <div class="container split">
-        <div class="split__media">
-          <img src="images/david-lane.jpg" alt="David Lane, founder and instructor at Learn with Lane" />
-        </div>
-        <div class="split__copy split__copy--center">
-          <h1>Master English and Reading with Confidence</h1>
-          <p class="lead mt-16">Expert, patient instruction for ESL learners and students needing reading remediation. Build fluency and foundational skills in a supportive environment.</p>
-          <div class="mt-24">
-            <a class="btn" href="https://cal.com/learnwithlane/30min" target="_blank" rel="noopener">Book a Free Trial Lesson</a>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div>
+          <p class="eyebrow">Hi, I&rsquo;m David Lane.</p>
+          <h1>Real teacher. Real lessons. <span class="gold">Made in Oklahoma.</span></h1>
+          <p class="lead">I teach English to kids in grades 4&ndash;8: live online classes for homeschool families, one-on-one lessons for kids learning English, and workbooks you can print tonight.</p>
+          <div class="btn-row">
+            <a class="btn" href="/oklahoma-homeschool-classes.html">See the homeschool classes</a>
+            <a class="btn btn--light" href="/free-phonics-worksheets.html">Get free worksheets</a>
           </div>
+          <ul class="hero__facts">
+            <li>20+ years in the classroom</li>
+            <li>Master&rsquo;s in Educational Leadership</li>
+            <li>TESOL certified</li>
+          </ul>
+        </div>
+        <div class="hero__art">
+          <img src="/images/owl-waving.svg" alt="The Learn With Lane owl waving hello" width="420" height="420" />
         </div>
       </div>
     </section>
 
-    <hr class="divider" />
+    <!-- Three doors -->
+    <section class="section section--tint section--center">
+      <div class="container">
+        <h2>Three ways to learn with me</h2>
+        <p class="lead mt-16">Pick the one that fits your family.</p>
 
-    <!-- Two decades: copy left, photo right -->
+        <div class="doors">
+          <article class="door">
+            <span class="door__tag">Winter 2027</span>
+            <img class="door__icon" src="/images/owl-cards.svg" alt="" width="92" height="92" />
+            <h3>Homeschool Classes</h3>
+            <p>Live online English classes for grades 4&ndash;8, in small groups. The first one is <strong>Creature Card Lab</strong>: kids invent their own creature cards and write everything on them.</p>
+            <ul>
+              <li>Names, stats, battle rules and trade pitches</li>
+              <li>Every kid&rsquo;s card is printed, slabbed and mailed home</li>
+              <li>Oklahoma homeschoolers may qualify for the Parental Choice Tax Credit</li>
+            </ul>
+            <a class="btn" href="/oklahoma-homeschool-classes.html">See the class</a>
+          </article>
+
+          <article class="door">
+            <span class="door__tag">One-on-one</span>
+            <img class="door__icon" src="/images/owl-waving.svg" alt="" width="92" height="92" />
+            <h3>English Lessons</h3>
+            <p>Thirty-minute online lessons for kids who are learning English, with a native-speaking American teacher.</p>
+            <ul>
+              <li>Conversation practice to build speaking confidence</li>
+              <li>Structured lessons: school English, reading and grammar</li>
+              <li>Your first 30-minute lesson is free</li>
+            </ul>
+            <a class="btn" href="/services-scheduling.html">See English lessons</a>
+          </article>
+
+          <article class="door">
+            <span class="door__tag">Print and go</span>
+            <img class="door__icon" src="/images/owl-reading.svg" alt="" width="92" height="92" />
+            <h3>Workbooks</h3>
+            <p>Phonics, grammar, reading comprehension and morphology packs I wrote for my own students, with answer keys.</p>
+            <ul>
+              <li>Real lessons, one skill at a time</li>
+              <li>Instant PDF downloads on Teachers Pay Teachers</li>
+              <li>Print editions are coming to Amazon</li>
+            </ul>
+            <a class="btn" href="/workbooks.html">Browse the workbooks</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
     <section class="section">
-      <div class="container split">
+      <div class="container split split--about">
+        <div class="split__media photo-frame">
+          <img src="/images/david-lane.jpg" alt="David Lane, founder and teacher at Learn With Lane" width="450" height="395" />
+        </div>
         <div class="split__copy">
-          <h2>Over Two Decades of Educational Excellence</h2>
-          <p class="lead">Finding the right educator isn't just about credentials; it&rsquo;s about connection. With over 20 years of classroom experience, a Master&rsquo;s degree in Educational Leadership, and TESOL certification, I bring a wealth of professional expertise to every single lesson.</p>
-          <p class="lead">But beyond the degrees, I understand the deep commitment required to tailor an education to a child's specific needs, navigating that exact journey every day while homeschooling my own teenager. I know what it takes to build a curriculum that actually engages a student. Whether we are breaking down complex phonics to overcome reading hurdles or building conversational English fluency, my goal is to create a space where students feel safe, encouraged, and ready to succeed.</p>
-        </div>
-        <div class="split__media">
-          <img src="images/david-lane-secondary.png" alt="David Lane at his desk with a stack of TESOL and English language books" />
+          <p class="eyebrow">About me</p>
+          <h2>Twenty years of teaching, one kitchen table</h2>
+          <p class="lead">I have spent more than 20 years in the classroom. I hold a Master&rsquo;s degree in Educational Leadership and a TESOL certification, and I live in Mead, Oklahoma, near Lake Texoma.</p>
+          <p class="lead">I also homeschool my own teenager, so I know what it takes to keep a kid interested day after day. That is why my lessons start with something kids already care about, and why every worksheet teaches one skill at a time. My goal is simple: a student who feels safe, encouraged and ready to try.</p>
+          <ul class="creds">
+            <li>Upper elementary + middle school</li>
+            <li>Homeschool parent</li>
+            <li>Online, from anywhere</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <hr class="divider" />
-
-    <!-- Specialized instruction -->
-    <section class="section section--center">
+    <!-- Free worksheets strip -->
+    <section class="section" style="padding-top: 0;">
       <div class="container">
-        <h2>Specialized Instruction Tailored to Your Goals</h2>
-        <p class="lead mt-16">Choose the learning track that fits your needs.</p>
-
-        <div class="grid--2 mt-24">
-          <div class="track">
-            <h3>Reading Remediation</h3>
-            <p>Targeted, intensive intervention designed to close reading gaps. We focus on phonemic awareness, reading fluency, and deep comprehension so students can read with confidence and joy.</p>
-            <a href="services-scheduling.html">Learn More &amp; See Rates</a>
+        <div class="strip">
+          <img src="/images/worksheets/free-worksheets-share.jpg" alt="" width="120" loading="lazy" />
+          <div>
+            <h2>Free worksheets, real pages</h2>
+            <p>Phonics, grammar and reading printables from my packs, with answer keys. No watered-down previews.</p>
           </div>
-          <div class="track">
-            <h3>ESL (English as a Second Language)</h3>
-            <p>Dynamic, conversational, and foundational English coaching. Perfect for students looking to improve their pronunciation, vocabulary, and practical communication skills.</p>
-            <a href="services-scheduling.html">Learn More &amp; See Rates</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <hr class="divider" />
-
-    <!-- Who I serve: internal links for SEO -->
-    <section class="section section--center">
-      <div class="container">
-        <h2>Teaching Students Around the World — and Around the Corner</h2>
-        <div class="grid--2 mt-24">
-          <div class="track">
-            <h3>Students in Taiwan 台灣的學生</h3>
-            <p>I teach one-on-one online English lessons to students across Taiwan, at times that work for Taiwan schedules. Contact me on Line for a free trial lesson.</p>
-            <a href="zh-tw/" lang="zh-Hant">中文介紹頁 — 美國認證外師線上英文</a>
-          </div>
-          <div class="track">
-            <h3>Families in Southern Oklahoma &amp; North Texas</h3>
-            <p>Based near Lake Texoma, I provide reading remediation and homeschool reading support for families in Durant, Ardmore, Ada, Madill, Sherman, Denison, and surrounding communities &mdash; online, or in person in Bryan, Marshall, and Grayson counties.</p>
-            <a href="reading-tutor-oklahoma.html">Local tutoring: online &amp; in person</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <hr class="divider" />
-
-    <!-- In-person lessons -->
-    <section class="section section--center">
-      <div class="container">
-        <h2 class="heading-red">In-Person Lessons Near Lake Texoma</h2>
-        <p class="lead mt-16">Prefer face to face? I teach one-on-one in person in Bryan County and Marshall County, Oklahoma, and Grayson County, Texas. Thirty minutes, $25, materials included. You choose the meeting place when you book &mdash; your home or a local library.</p>
-        <div class="mt-24">
-          <a class="btn" href="https://cal.com/learnwithlane/in-person" target="_blank" rel="noopener">Book an In-Person Lesson &mdash; $25</a>
-        </div>
-      </div>
-    </section>
-
-    <hr class="divider" />
-
-    <!-- The Reading Playbook -->
-    <section class="section">
-      <div class="container split">
-        <div class="split__media">
-          <a href="playbook.html"><img src="images/playbook-cover.jpg" alt="The Reading Playbook — a 100-page reading intervention workbook for grades 3 to 8" /></a>
-        </div>
-        <div class="split__copy split__copy--center">
-          <h2>New: The Reading Playbook</h2>
-          <p class="lead mt-16">A 100-page reading intervention workbook for grades 3&ndash;8. Phonics, fluency, and comprehension in fifteen minutes a day &mdash; with a coach&rsquo;s script on every page, so you never have to guess what to say next.</p>
-          <p class="lead mt-16">Built for older students who slipped through the cracks and are tired of workbooks made for six-year-olds.</p>
-          <div class="mt-24">
-            <a class="btn" href="playbook.html">See the Playbook &mdash; $12</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <hr class="divider" />
-
-    <!-- Free worksheets -->
-    <section class="section">
-      <div class="container split">
-        <div class="split__media">
-          <a href="free-phonics-worksheets.html"><img src="images/worksheets/phonics-bundle.jpg" alt="Learn with Lane phonics worksheets: CVC word families, the floss rule and bossy r" loading="lazy" /></a>
-        </div>
-        <div class="split__copy split__copy--center">
-          <h2>Free Phonics Worksheets</h2>
-          <p class="lead mt-16">Five free printable samplers, from kindergarten word families to syllable types for older readers. Real pages from my phonics packs, with answer keys.</p>
-          <div class="mt-24">
-            <a class="btn" href="free-phonics-worksheets.html">Get the Free Worksheets</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <hr class="divider" />
-
-    <!-- Interactive Lesson Library (links to lwl-lessons.netlify.app) -->
-    <section class="section">
-      <div class="container split">
-        <div class="split__media">
-          <img src="images/lesson-library-preview.png" alt="Interactive ESL lesson from the Learn with Lane library" loading="lazy" />
-        </div>
-        <div class="split__copy split__copy--center">
-          <h2>Interactive Lesson Library</h2>
-          <p class="lead mt-16">Co-browsable ESL and reading lessons with matching printable worksheets, used in live sessions and included free for every current Learn with Lane student. New lessons added regularly.</p>
-          <div class="mt-24">
-            <a class="btn" href="https://members.learnwithlane.com/">Student Sign-In</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <hr class="divider" />
-
-    <!-- Ready to unlock your potential (links to Services & Scheduling) -->
-    <section class="section section--center cta-image">
-      <div class="container">
-        <a href="services-scheduling.html">
-          <img src="images/hero-schedule.png" alt="Learn with Lane owl mascot: Ready to unlock your potential? Let's discuss your goals and build a customized learning plan." loading="lazy" />
-        </a>
-        <h2 class="mt-24">Ready to unlock your potential?</h2>
-        <p class="lead mt-16">Let&rsquo;s discuss your goals and build a customized learning plan.</p>
-        <div class="mt-24">
-          <a class="btn" href="services-scheduling.html">Schedule Your First Class</a>
+          <a class="btn btn--secondary" href="/free-phonics-worksheets.html">Get the free worksheets</a>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <h2>Contact me</h2>
-      <p>Email: <a href="mailto:david@learnwithlane.com">david@learnwithlane.com</a></p>
-      <p>Text: 405-459-7176</p>
-      <p>Line ID: lwldavid</p>
-      <p>WeChat: RealDeeLane</p>
-      <p>KaKao Talk: RealDeeLane</p>
-      <p>WhatsApp: LWLDavid</p>
-      <p class="mt-16">&copy; 2026 Learn with Lane &middot; Mead, Oklahoma, USA &middot; Online tutoring worldwide</p>
-    </div>
-  </footer>
-
-  <script src="js/script.js"></script>
+  {% include footer.html %}
 </body>
 </html>

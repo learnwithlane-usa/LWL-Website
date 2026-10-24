@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,32 +27,11 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
   <link rel="manifest" href="site.webmanifest" />
-  <link rel="stylesheet" href="css/styles.css" />
+  {% include head-fonts.html %}
+  <link rel="stylesheet" href="/css/styles.css" />
 </head>
 <body>
-  <a href="#main" class="skip-link">Skip to content</a>
-
-  <!-- Header -->
-  <header class="site-header">
-    <div class="container">
-      <nav class="nav" aria-label="Primary">
-        <a class="nav__brand" href="/">
-          <img src="images/logo.png" alt="Learn with Lane logo" />
-          Learn with Lane
-        </a>
-        <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-menu">
-          <span></span><span></span><span></span>
-        </button>
-        <ul class="nav__links" id="primary-menu">
-          <li><a href="/">Home</a></li>
-          <li><a href="services-scheduling.html">Services &amp; Scheduling</a></li>
-          <li><a href="playbook.html">Reading Playbook</a></li>
-          <li><a href="members/">Members Area</a></li>
-          <li><a href="zh-tw/" lang="zh-Hant">中文</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  {% include header.html %}
 
   <main id="main">
     <section class="section">
@@ -62,7 +43,7 @@
         <hr class="divider" style="margin: 32px 0;" />
 
         <h2>1. Tutoring Services &amp; Scheduling</h2>
-        <p class="mt-16">Learn with Lane provides independent online and in-person English as a Second Language (ESL) and reading remediation instruction. All tutoring appointments must be scheduled by an adult parent, legal guardian, or authorized educator. Please provide at least 24 hours notice for session cancellations or rescheduling requests.</p>
+        <p class="mt-16">Learn with Lane provides independent online English as a Second Language (ESL) and reading remediation instruction. All tutoring appointments must be scheduled by an adult parent, legal guardian, or authorized educator. Please provide at least 24 hours notice for session cancellations or rescheduling requests.</p>
 
         <hr class="divider" style="margin: 32px 0;" />
 
@@ -98,20 +79,6 @@
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <h2>Contact me</h2>
-      <p>Email: <a href="mailto:david@learnwithlane.com">david@learnwithlane.com</a></p>
-      <p>Text: 405-459-7176</p>
-      <p>Line ID: lwldavid</p>
-      <p>WeChat: RealDeeLane</p>
-      <p>KaKao Talk: RealDeeLane</p>
-      <p>WhatsApp: LWLDavid</p>
-      <p class="mt-16">&copy; 2026 Learn with Lane &middot; Mead, Oklahoma, USA &middot; <a href="privacy.html" style="color: inherit; text-decoration: underline;">Privacy Policy</a> &middot; <a href="terms.html" style="color: inherit; text-decoration: underline;">Terms of Service</a></p>
-    </div>
-  </footer>
-
-  <script src="js/script.js"></script>
+  {% include footer.html %}
 </body>
 </html>

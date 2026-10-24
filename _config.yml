@@ -1,5 +1,5 @@
 title: Learn With Lane
-description: Structured ESL and reading remediation instruction.
+description: English classes, lessons and workbooks for grades 4-8.
 # Exclude planning/handoff docs and source assets from the published site
 exclude:
   - "Hero Images/"
@@ -7,6 +7,8 @@ exclude:
   - "BUILD_COMPLETE.md"
   - "HANDOFF_GUIDE.md"
   - "README.md"
+  - "tools/"
+  - "_preview/"
   - "Brand_Identity.md"
   - "Tone_Guidelines.md"
   - "Product_Lines.md"

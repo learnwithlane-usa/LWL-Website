@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,7 +28,8 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
   <link rel="manifest" href="site.webmanifest" />
-  <link rel="stylesheet" href="css/styles.css" />
+  {% include head-fonts.html %}
+  <link rel="stylesheet" href="/css/styles.css" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -73,43 +76,13 @@
     .ws-card ul { margin: 0 0 16px 20px; font-size: 0.95rem; }
     .ws-card .btn { margin-top: auto; text-align: center; }
     .ws-full { font-size: 0.9rem; margin-top: 12px; }
-    .ws-packs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 32px; }
-    .ws-pack { text-align: center; }
-    .ws-pack img { width: 100%; height: auto; border-radius: 10px; border: 2px solid #e6dcc8; display: block; }
-    .ws-pack h3 { font-size: 1.05rem; margin: 12px 0 4px; }
-    .ws-pack p { font-size: 0.92rem; margin-bottom: 6px; }
-    .ws-pack a { text-decoration: underline; color: var(--ink); font-size: 0.95rem; }
     @media (max-width: 760px) {
       .ws-grid { grid-template-columns: 1fr; }
-      .ws-packs { grid-template-columns: 1fr 1fr; }
     }
   </style>
 </head>
 <body>
-  <a href="#main" class="skip-link">Skip to content</a>
-
-  <!-- Header -->
-  <header class="site-header">
-    <div class="container">
-      <nav class="nav" aria-label="Primary">
-        <a class="nav__brand" href="index.html">
-          <img src="images/logo.png" alt="Learn with Lane logo" />
-          Learn with Lane
-        </a>
-        <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-menu">
-          <span></span><span></span><span></span>
-        </button>
-        <ul class="nav__links" id="primary-menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services-scheduling.html">Services &amp; Scheduling</a></li>
-          <li><a href="playbook.html">Reading Playbook</a></li>
-          <li><a href="free-phonics-worksheets.html">Free Worksheets</a></li>
-          <li><a href="members/">Members Area</a></li>
-          <li><a href="zh-tw/" lang="zh-Hant">中文</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  {% include header.html %}
 
   <main id="main">
     <!-- Hero -->
@@ -261,7 +234,7 @@
               <li>Summarizing with SWBST</li>
             </ul>
             <a class="btn" href="https://www.teacherspayteachers.com/Product/FREE-Reading-Intervention-Worksheets-Syllable-Types-Prefixes-Fluency-Sampler-17885294" target="_blank" rel="noopener">Download Free on TPT</a>
-            <p class="ws-full">Full workbook: <a href="playbook.html">The Reading Playbook, 100 pages</a></p>
+            <p class="ws-full">Full workbook: <a href="https://www.teacherspayteachers.com/Product/Reading-Playbook-16831558" target="_blank" rel="noopener">The Reading Playbook, 100 pages</a></p>
           </div>
 
           <div class="ws-card">
@@ -523,10 +496,10 @@
             <a href="https://www.teacherspayteachers.com/Product/CK-Worksheets-ck-or-k-Spelling-Rule-Digraph-ck-Sorts-Decodable-Stories-17906501" target="_blank" rel="noopener">See the pack</a>
           </div>
           <div class="ws-pack">
-            <a href="playbook.html"><img src="images/worksheets/reading-playbook.jpg" alt="The Reading Playbook cover" loading="lazy" /></a>
+            <a href="https://www.teacherspayteachers.com/Product/Reading-Playbook-16831558" target="_blank" rel="noopener"><img src="images/worksheets/reading-playbook.jpg" alt="The Reading Playbook cover" loading="lazy" /></a>
             <h3>The Reading Playbook</h3>
             <p>100 pages of phonics, fluency and comprehension for older readers.</p>
-            <a href="playbook.html">See the Playbook</a>
+            <a href="https://www.teacherspayteachers.com/Product/Reading-Playbook-16831558" target="_blank" rel="noopener">See the Playbook</a>
           </div>
           <div class="ws-pack">
             <a href="https://www.teacherspayteachers.com/Product/Making-Inferences-in-Short-Stories-12-Passages-Text-Evidence-Quiz-NO-PREP-17905701" target="_blank" rel="noopener"><img src="images/worksheets/making-inferences-short-stories.jpg" alt="Making Inferences in Short Stories cover: 12 stories, grades 3 to 6" loading="lazy" /></a>
@@ -613,20 +586,6 @@
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <h2>Contact me</h2>
-      <p>Email: <a href="mailto:david@learnwithlane.com">david@learnwithlane.com</a></p>
-      <p>Text: 405-459-7176</p>
-      <p>Line ID: lwldavid</p>
-      <p>WeChat: RealDeeLane</p>
-      <p>KaKao Talk: RealDeeLane</p>
-      <p>WhatsApp: LWLDavid</p>
-      <p class="mt-16">&copy; 2026 Learn with Lane &middot; Mead, Oklahoma, USA &middot; Serving the Texoma region &amp; students worldwide</p>
-    </div>
-  </footer>
-
-  <script src="js/script.js"></script>
+  {% include footer.html %}
 </body>
 </html>

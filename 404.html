@@ -1,3 +1,6 @@
+---
+permalink: /404.html
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,35 +19,15 @@
   <meta name="robots" content="noindex" />
   <title>Page Not Found | Learn with Lane</title>
   <link rel="icon" href="favicon.ico" sizes="any" />
-  <link rel="stylesheet" href="css/styles.css" />
+  {% include head-fonts.html %}
+  <link rel="stylesheet" href="/css/styles.css" />
   <!-- Meta Pixel Code -->
   <script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js'); fbq('init', '2257383038363577'); fbq('track', 'PageView');</script>
   <noscript> <img height="1" width="1" src="https://www.facebook.com/tr?id=2257383038363577&ev=PageView&noscript=1"/></noscript>
   <!-- End Meta Pixel Code -->
 </head>
 <body>
-  <a href="#main" class="skip-link">Skip to content</a>
-
-  <header class="site-header">
-    <div class="container">
-      <nav class="nav" aria-label="Primary">
-        <a class="nav__brand" href="index.html">
-          <img src="images/logo.png" alt="Learn with Lane logo" />
-          Learn with Lane
-        </a>
-        <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-menu">
-          <span></span><span></span><span></span>
-        </button>
-        <ul class="nav__links" id="primary-menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services-scheduling.html">Services &amp; Scheduling</a></li>
-          <li><a href="playbook.html">Reading Playbook</a></li>
-          <li><a href="members/">Members Area</a></li>
-          <li><a href="zh-tw/" lang="zh-Hant">中文</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  {% include header.html %}
 
   <main id="main">
     <section class="section section--center">
@@ -54,20 +37,11 @@
         <div class="mt-24">
           <a class="btn" href="index.html">Back to Home</a>
         </div>
-        <p class="lead mt-24"><a href="services-scheduling.html">Book a lesson</a> &middot; <a href="playbook.html">Get the Reading Playbook</a> &middot; <a href="zh-tw/" lang="zh-Hant">中文介紹</a></p>
+        <p class="lead mt-24"><a href="services-scheduling.html">Book a lesson</a> &middot; <a href="free-phonics-worksheets.html">Free worksheets</a> &middot; <a href="zh-tw/" lang="zh-Hant">中文介紹</a></p>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <h2>Contact me</h2>
-      <p>Email: <a href="mailto:david@learnwithlane.com">david@learnwithlane.com</a></p>
-      <p>Text: 405-459-7176</p>
-      <p class="mt-16">&copy; 2026 Learn with Lane</p>
-    </div>
-  </footer>
-
-  <script src="js/script.js"></script>
+  {% include footer.html %}
 </body>
 </html>

@@ -31,6 +31,9 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <link rel="manifest" href="/site.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Patrick+Hand&display=swap" />
   <link rel="stylesheet" href="/css/styles.css" />
   <script type="application/ld+json">
   {
@@ -86,32 +89,26 @@
 <body>
   <a href="#main" class="skip-link">跳到主要內容</a>
 
-  <!-- Header -->
   <header class="site-header">
     <div class="container">
       <nav class="nav" aria-label="Primary">
-        <a class="nav__brand" href="/index.html">
-          <img src="/images/logo.png" alt="Learn with Lane 標誌" />
-          Learn with Lane
+        <a class="nav__brand" href="/zh-tw/">
+          <img src="/images/logo.png" alt="" width="52" height="52" />
+          Learn With Lane
         </a>
         <button class="nav__toggle" aria-label="開啟選單" aria-expanded="false" aria-controls="primary-menu">
           <span></span><span></span><span></span>
         </button>
         <ul class="nav__links" id="primary-menu">
-          <li><a href="/index.html" lang="en">Home</a></li>
-          <li><a href="/services-scheduling.html" lang="en">Services &amp; Scheduling</a></li>
-          <li><a href="/playbook.html" lang="en">Reading Playbook</a></li>
-          <li><a href="/members/" lang="en">Members Area</a></li>
-          <li><a href="/zh-tw/" aria-current="page">中文</a></li>
+          <li><a href="/zh-tw/" aria-current="page">線上英文課</a></li>
+          <li><a href="/free-phonics-worksheets.html" lang="en">Free Worksheets</a></li>
+          <li class="nav__lang"><a href="/" lang="en">English</a></li>
+          <li class="nav__cta"><a href="https://line.me/R/ti/p/~lwldavid" target="_blank" rel="noopener">LINE 免費試聽</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- Top banner -->
-  <div class="banner">
-    <img src="/images/banner.png" alt="Learn with Lane — 帶您進入英文的世界" />
-  </div>
 
   <main id="main">
     <!-- Hero -->
@@ -210,16 +207,38 @@
     </section>
   </main>
 
-  <!-- Footer -->
   <footer class="site-footer">
     <div class="container">
-      <h2>聯絡老師</h2>
-      <p>Email：<a href="mailto:david@learnwithlane.com">david@learnwithlane.com</a></p>
-      <p>Line ID：lwldavid</p>
-      <p>WeChat：RealDeeLane</p>
-      <p>KaKao Talk：RealDeeLane</p>
-      <p>WhatsApp：LWLDavid</p>
-      <p class="mt-16">&copy; 2026 Learn with Lane &middot; 美國奧克拉荷馬州 &middot; <a href="/index.html">English</a></p>
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">
+            <img src="/images/owl-waving.svg" alt="" width="56" height="56" />
+            Learn With Lane
+          </div>
+          <p class="mt-16">David 老師的一對一線上英文課，來自美國奧克拉荷馬州。</p>
+        </div>
+        <div>
+          <h2>聯絡老師</h2>
+          <ul>
+            <li>Line ID：<a href="https://line.me/R/ti/p/~lwldavid" target="_blank" rel="noopener">lwldavid</a></li>
+            <li>Email：<a href="mailto:david@learnwithlane.com">david@learnwithlane.com</a></li>
+            <li>WhatsApp：LWLDavid</li>
+            <li>WeChat：RealDeeLane</li>
+            <li>KakaoTalk：RealDeeLane</li>
+          </ul>
+        </div>
+        <div>
+          <h2>更多</h2>
+          <ul>
+            <li><a href="/" lang="en">English site</a></li>
+            <li><a href="/free-phonics-worksheets.html" lang="en">Free Worksheets</a></li>
+            <li><a href="/privacy.html" lang="en">Privacy</a> &middot; <a href="/terms.html" lang="en">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__legal">
+        <p>&copy; 2026 Learn With Lane &middot; 美國奧克拉荷馬州</p>
+      </div>
     </div>
   </footer>
 

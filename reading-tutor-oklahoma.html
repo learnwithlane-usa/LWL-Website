@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +16,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Reading Tutor for Durant, Ardmore &amp; Texoma — Online Reading Remediation | Learn with Lane</title>
-  <meta name="description" content="One-on-one online reading tutoring from a certified teacher based in Mead, Oklahoma. Structured phonics, fluency, and comprehension help for struggling readers in Durant, Ardmore, Ada, Madill, Sherman, Denison, and across the Texoma region. Online lessons from $15 with materials included, in-person lessons $25, free trial." />
+  <meta name="description" content="One-on-one online reading tutoring from a certified teacher based in Mead, Oklahoma. Structured phonics, fluency, and comprehension help for struggling readers in Durant, Ardmore, Ada, Madill, Sherman, Denison, and across the Texoma region. Online lessons from $15 with materials included, free trial." />
   <link rel="canonical" href="https://learnwithlane.com/reading-tutor-oklahoma.html" />
   <meta property="og:title" content="Reading Tutor for Durant, Ardmore &amp; Texoma — Learn with Lane" />
   <meta property="og:description" content="1-on-1 online reading remediation from a local certified teacher. Structured phonics, fluency, and comprehension for struggling readers across the Texoma region. Free trial lesson." />
@@ -26,13 +28,14 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
   <link rel="manifest" href="site.webmanifest" />
-  <link rel="stylesheet" href="css/styles.css" />
+  {% include head-fonts.html %}
+  <link rel="stylesheet" href="/css/styles.css" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Service",
     "@id": "https://learnwithlane.com/reading-tutor-oklahoma.html#local-tutoring",
-    "serviceType": "Reading remediation and ESL tutoring (one-on-one, online or in person)",
+    "serviceType": "Reading remediation and ESL tutoring (one-on-one, online)",
     "provider": { "@id": "https://learnwithlane.com/#business" },
     "areaServed": [
       { "@type": "City", "name": "Durant", "containedInPlace": { "@type": "State", "name": "Oklahoma" } },
@@ -50,7 +53,6 @@
     ],
     "offers": [
       { "@type": "Offer", "name": "Reading Remediation lesson with materials (1-on-1, online, 30 min)", "price": "15", "priceCurrency": "USD" },
-      { "@type": "Offer", "name": "In-Person Lesson (30 min, Bryan and Marshall counties OK, Grayson County TX)", "price": "25", "priceCurrency": "USD" },
       { "@type": "Offer", "name": "ESL Free Talk conversation practice (1-on-1, online, 30 min)", "price": "10", "priceCurrency": "USD" },
       { "@type": "Offer", "name": "Free 30-minute trial lesson", "price": "0", "priceCurrency": "USD" }
     ]
@@ -64,7 +66,7 @@
       {
         "@type": "Question",
         "name": "Do you tutor in person or online?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Both. Most sessions are one-on-one and online, which means no driving to Sherman or Ada after school — your student works with me live from home. One-on-one in-person lessons ($25 for 30 minutes, materials included) are available in Bryan County (OK), Marshall County (OK), and Grayson County (TX); you choose the meeting place, such as your home or a local library, when you book." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Online. Every session is one-on-one and live on video, which means no driving to Sherman or Ada after school: your student works with me from home." }
       },
       {
         "@type": "Question",
@@ -74,12 +76,12 @@
       {
         "@type": "Question",
         "name": "Do you work with homeschool families?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes. I homeschool my own teenager and work with homeschool families across southern Oklahoma and North Texas. I can serve as your reading specialist — either through weekly one-on-one sessions or by coaching you through the Reading Playbook, my 100-page structured reading intervention workbook." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. I homeschool my own teenager and work with homeschool families across southern Oklahoma and North Texas. I can serve as your reading specialist — either through weekly one-on-one sessions or by coaching you through the Reading Playbook, my 100-page structured reading intervention workbook on Teachers Pay Teachers." }
       },
       {
         "@type": "Question",
         "name": "What does tutoring cost?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Online lessons with materials (Lesson Provided) are $15 per 30-minute session. Free Talk conversation practice for ESL students is $10, online group classes are $10 per student, and in-person lessons in Bryan County (OK), Marshall County (OK), and Grayson County (TX) are $25. No packages or hidden fees. The first 30-minute assessment lesson is free." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Online lessons with materials (Lesson Provided) are $15 per 30-minute session. Free Talk conversation practice for ESL students is $10. No packages or hidden fees. The first 30-minute assessment lesson is free." }
       },
       {
         "@type": "Question",
@@ -96,35 +98,7 @@
   <!-- End Meta Pixel Code -->
 </head>
 <body>
-  <a href="#main" class="skip-link">Skip to content</a>
-
-  <!-- Header -->
-  <header class="site-header">
-    <div class="container">
-      <nav class="nav" aria-label="Primary">
-        <a class="nav__brand" href="index.html">
-          <img src="images/logo.png" alt="Learn with Lane logo" />
-          Learn with Lane
-        </a>
-        <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-menu">
-          <span></span><span></span><span></span>
-        </button>
-        <ul class="nav__links" id="primary-menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services-scheduling.html">Services &amp; Scheduling</a></li>
-          <li><a href="playbook.html">Reading Playbook</a></li>
-          <li><a href="free-phonics-worksheets.html">Free Worksheets</a></li>
-          <li><a href="members/">Members Area</a></li>
-          <li><a href="zh-tw/" lang="zh-Hant">中文</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Top banner -->
-  <div class="banner">
-    <img src="images/banner.png" alt="Learn with Lane — Connecting You to the World of English" />
-  </div>
+  {% include header.html %}
 
   <main id="main">
     <!-- Hero -->
@@ -135,10 +109,9 @@
         </div>
         <div class="split__copy split__copy--center">
           <h1>A Certified Reading Tutor, Right Here in the Texoma Area</h1>
-          <p class="lead mt-16">I'm David Lane — a teacher with 20+ years of classroom experience, a Master's in Educational Leadership, and TESOL certification, based in Mead, Oklahoma. I help struggling readers across southern Oklahoma and North Texas catch up and build confidence, one-on-one &mdash; online, or in person close to home.</p>
+          <p class="lead mt-16">I'm David Lane — a teacher with 20+ years of classroom experience, a Master's in Educational Leadership, and TESOL certification, based in Mead, Oklahoma. I help struggling readers across southern Oklahoma and North Texas catch up and build confidence, one-on-one and online, from your kitchen table.</p>
           <div class="mt-24">
             <a class="btn" href="https://cal.com/learnwithlane/30min" target="_blank" rel="noopener">Book a Free Trial Lesson</a>
-            <a class="btn btn--secondary" href="https://cal.com/learnwithlane/in-person" target="_blank" rel="noopener">Book an In-Person Lesson</a>
           </div>
         </div>
       </div>
@@ -150,7 +123,7 @@
     <section class="section section--center">
       <div class="container">
         <h2>Serving Families Within an Hour or Two of Lake Texoma</h2>
-        <p class="lead mt-16">Durant &middot; Ardmore &middot; Ada &middot; Madill &middot; Kingston &middot; Tishomingo &middot; Atoka &middot; Calera &middot; Caddo &middot; Sherman &middot; Denison &middot; Gainesville &middot; Bonham &middot; Paris &mdash; and everywhere in between. Most sessions are online, so there's no after-school drive: your student works with me live from your kitchen table. Prefer face to face? In-person lessons are available in Bryan, Marshall, and Grayson counties.</p>
+        <p class="lead mt-16">Durant &middot; Ardmore &middot; Ada &middot; Madill &middot; Kingston &middot; Tishomingo &middot; Atoka &middot; Calera &middot; Caddo &middot; Sherman &middot; Denison &middot; Gainesville &middot; Bonham &middot; Paris &mdash; and everywhere in between. Most sessions are online, so there's no after-school drive: your student works with me live from your kitchen table.</p>
         <div class="grid--2 mt-24">
           <div class="track">
             <h3>Reading Remediation — $15/session</h3>
@@ -159,22 +132,9 @@
           </div>
           <div class="track">
             <h3>Homeschool Reading Support</h3>
-            <p>I homeschool my own teenager, and I work with homeschool families as their reading specialist — through weekly sessions, or by coaching you through <a href="playbook.html">The Reading Playbook</a>, my 100-page reading intervention workbook ($9.99).</p>
-            <a href="playbook.html">See the Reading Playbook</a>
+            <p>I homeschool my own teenager, and I work with homeschool families as their reading specialist — through weekly sessions, or by coaching you through <a href="https://www.teacherspayteachers.com/Product/Reading-Playbook-16831558" target="_blank" rel="noopener">The Reading Playbook</a>, my 100-page reading intervention workbook.</p>
+            <a href="https://www.teacherspayteachers.com/Product/Reading-Playbook-16831558" target="_blank" rel="noopener">See the Reading Playbook on TPT</a>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <hr class="divider" />
-
-    <!-- Local in person -->
-    <section class="section section--center">
-      <div class="container">
-        <h2>In-Person Lessons Close to Home</h2>
-        <p class="lead mt-16">One-on-one, 30 minutes, $25 with materials included. Available in Bryan County and Marshall County, Oklahoma, and Grayson County, Texas. You choose the meeting place when you book &mdash; your home or a local library &mdash; and I confirm before the lesson. Weekday mornings; please book at least 24 hours ahead.</p>
-        <div class="mt-24">
-          <a class="btn" href="https://cal.com/learnwithlane/in-person" target="_blank" rel="noopener">Book an In-Person Lesson &mdash; $25</a>
         </div>
       </div>
     </section>
@@ -187,13 +147,13 @@
         <h2 class="text-center">Questions Local Families Ask</h2>
         <div class="faq-static">
           <h3>Do you tutor in person or online?</h3>
-          <p>Both. Most sessions are one-on-one and online — no driving to Sherman or Ada after school. One-on-one in-person lessons ($25 for 30 minutes, materials included) are available in Bryan County (OK), Marshall County (OK), and Grayson County (TX); you choose the meeting place, such as your home or a local library, when you <a href="https://cal.com/learnwithlane/in-person" target="_blank" rel="noopener">book</a>.</p>
+          <p>Online. Every session is one-on-one and live on video, so there is no driving to Sherman or Ada after school.</p>
           <h3>My child is in middle school and still struggles to read. Can you help?</h3>
           <p>That's my specialty. Many students in grades 5&ndash;8 can sound out simple words but stall on longer ones, read without expression, and forget what they've read. I use a structured-literacy approach designed for older students who missed foundational skills.</p>
           <h3>Do you work with homeschool families?</h3>
           <p>Yes. I homeschool my own teenager and work with homeschool families across the region — as a weekly reading specialist, or by coaching you through the Reading Playbook.</p>
           <h3>What does tutoring cost?</h3>
-          <p>Online lessons with materials (Lesson Provided) are $15 per 30-minute session. Free Talk conversation practice for ESL students is $10, online group classes are $10 per student, and in-person lessons in Bryan County (OK), Marshall County (OK), and Grayson County (TX) are $25. No packages or hidden fees. The first 30-minute assessment lesson is free.</p>
+          <p>Online lessons with materials (Lesson Provided) are $15 per 30-minute session. Free Talk conversation practice for ESL students is $10. No packages or hidden fees. The first 30-minute assessment lesson is free.</p>
           <h3>Can you diagnose dyslexia?</h3>
           <p>No — a formal dyslexia evaluation is a job for a licensed specialist. What I provide is structured, systematic reading instruction of the kind recommended by the science of reading, which benefits struggling readers whether or not they have a formal diagnosis.</p>
         </div>
@@ -214,20 +174,6 @@
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <h2>Contact me</h2>
-      <p>Email: <a href="mailto:david@learnwithlane.com">david@learnwithlane.com</a></p>
-      <p>Text: 405-459-7176</p>
-      <p>Line ID: lwldavid</p>
-      <p>WeChat: RealDeeLane</p>
-      <p>KaKao Talk: RealDeeLane</p>
-      <p>WhatsApp: LWLDavid</p>
-      <p class="mt-16">&copy; 2026 Learn with Lane &middot; Mead, Oklahoma, USA &middot; Serving the Texoma region &amp; students worldwide</p>
-    </div>
-  </footer>
-
-  <script src="js/script.js"></script>
+  {% include footer.html %}
 </body>
 </html>

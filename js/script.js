@@ -9,6 +9,17 @@
   var toggle = document.querySelector(".nav__toggle");
   var links = document.querySelector(".nav__links");
 
+  /* ---------- Mark the current page in the shared header ---------- */
+  if (links) {
+    var here = window.location.pathname.replace(/index\.html$/i, "");
+    links.querySelectorAll("a").forEach(function (a) {
+      var target = a.getAttribute("href").split("#")[0];
+      if (target && target === here && !a.parentNode.classList.contains("nav__cta")) {
+        a.setAttribute("aria-current", "page");
+      }
+    });
+  }
+
   if (toggle && links) {
     toggle.addEventListener("click", function () {
       var open = links.classList.toggle("is-open");
