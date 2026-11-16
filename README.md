@@ -10,7 +10,7 @@ Redesign plan and status: `G:/AI/Business/Learn With Lane/WEBSITE_REDESIGN_PLAN.
 | `index.html` | Home: hero, three doors (classes, English lessons, workbooks), About David, free-worksheets strip |
 | `oklahoma-homeschool-classes.html` | Creature Card Lab, PCTC note, email class list (step 3 adds the Cal.com series booking) |
 | `workbooks.html` | Paid TPT packs (grid copied from the free page's "Full Packs" section) |
-| `free-phonics-worksheets.html` | Free TPT samplers + full packs (step 6 turns it into a filterable library) |
+| `free-phonics-worksheets.html` | Free TPT samplers only, as a filterable library (step 6, 2026-11-16). Paid tiles live on `workbooks.html` |
 | `zh-tw/index.html` | English Lessons (the only ESL page): Conversational $15 / Structured $25, Cal.com booking, English summary. Own Chinese header/footer (not the shared include) |
 | `intro.html`, `classroom.html`, `privacy.html`, `terms.html`, `404.html` | Older pages on the shared header/footer |
 | `services-scheduling.html`, `schedule-a-class/` | Redirect stubs to `/zh-tw/` (English lessons moved there 2026-10-24) |
@@ -26,11 +26,22 @@ Redesign plan and status: `G:/AI/Business/Learn With Lane/WEBSITE_REDESIGN_PLAN.
   "Join the class list". The current page is underlined by `js/script.js`.
 - Keep Liquid to those forms; `tools/preview.py` only understands them.
 
+## Free page library (since 2026-11-16)
+
+- A new free card needs `data-cat` (phonics, reading, grammar, morphology, math, ef) and its bullet list
+  inside `<details class="ws-more"><summary>What&rsquo;s inside</summary> ... </details>`. Bump that chip's count
+  and the "All" count in the `.ws-chips` bar. A card with no `data-cat` shows only under All.
+- Chips deep-link: `/free-phonics-worksheets.html#reading`.
+- The hero lead no longer lists skills (the meta description still does). Old `apply_site_card.py` scripts that
+  assert on the lead's skill list need that assert removed.
+- **Paid tiles go on `workbooks.html` only.** `launch_site_patch.py` scripts written before 11-16 anchor on the free
+  page's `ws-pack` grid, which is gone; point copies at `workbooks.html` (same tile markup).
+
 ## Local preview (no Ruby on this machine)
 
 ```
 python tools/preview.py               # builds _preview/ and serves http://localhost:4000
-python tools/preview.py --port 8765   # what G:/AI/.claude/launch.json "lwl-site" runs
+python tools/preview.py --port 8770   # what G:/AI/.claude/launch.json "lwl-site" runs (8765 is held by another local service)
 ```
 
 ## Brand
